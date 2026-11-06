@@ -1,0 +1,4 @@
+method,epochs,horizontal_rmse_m,vertical_rmse_m,position_3d_rmse_m,position_3d_mae_m,position_3d_p95_m,position_3d_max_m,relative_displacement_10s_rmse_m,relative_displacement_10s_pairs
+LC,1514,3.590468,4.696363,5.911623,5.329968,8.521854,12.224859,1.474167,1504
+TC-Pose,1514,1.82006,4.166347,4.546544,3.981241,7.860619,10.253638,1.33063,1504
+TC-Surface,1514,1.621981,3.110649,3.508128,3.204049,5.621831,7.926598,1.098153,1504

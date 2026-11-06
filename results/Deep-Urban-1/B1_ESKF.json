@@ -1,0 +1,104 @@
+{
+  "sequence": "Deep-Urban-1",
+  "method": "B1_ESKF",
+  "epochs": 1474,
+  "start_utc_unix": 1621578588.0,
+  "end_utc_unix": 1621580061.0,
+  "input_epochs": 1537,
+  "initialization_delay_s": 63.0,
+  "estimator_seconds": 6.51047720015049,
+  "sampled_peak_rss_mib": 67.17578125,
+  "initial_state": {
+    "p": [
+      -177.4439513080073,
+      70.53756223038437,
+      7.473568479212152
+    ],
+    "v": [
+      -3.763847531312046,
+      0.2550088214909405,
+      0.24547157126556063
+    ],
+    "R": [
+      [
+        0.0675990626861639,
+        -0.9976613621365242,
+        -0.010108077228110591
+      ],
+      [
+        0.9977125501139951,
+        0.06759371788814053,
+        0.0008698546416338112
+      ],
+      [
+        -0.00018457784608472133,
+        -0.010143756866455076,
+        0.9999485337401447
+      ]
+    ],
+    "bg": [
+      -0.0024018443655222654,
+      0.0005109086632728577,
+      -0.001937802997417748
+    ],
+    "ba": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "config": {
+    "imu_rate_hz": 100,
+    "gravity_mps2": 9.80511,
+    "acc_noise_density": 0.0112,
+    "gyro_noise_density": 0.01027,
+    "acc_bias_random_walk": 0.000118,
+    "gyro_bias_random_walk": 9.14e-05,
+    "dgnss_sigma_floor_m": 3.0,
+    "spp_sigma_floor_m": 6.0,
+    "bootstrap_seconds": 60,
+    "settling_seconds": 30,
+    "nis_probability": 0.999,
+    "fixed_lag_seconds": 5.0,
+    "isam_relinearize_threshold": 0.01,
+    "isam_relinearize_skip": 1,
+    "extra_relinearization_updates": 3,
+    "linear_solver": "QR",
+    "antenna_lever_body_m": [
+      0.0,
+      0.86,
+      -0.31
+    ],
+    "reference_lever_body_m": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "position_prior_sigma_m": 10.0,
+    "velocity_prior_sigma_mps": 5.0,
+    "tilt_prior_sigma_deg": 5.0,
+    "yaw_prior_sigma_deg": 30.0,
+    "acc_bias_prior_sigma": 0.1,
+    "gyro_bias_prior_sigma": 0.01,
+    "gnss_frontend": "Forward L1 DGNSS, with forward SPP fallback",
+    "gnss_constellation": "GPS+GLONASS+Galileo+QZSS+BeiDou+NavIC (where available)",
+    "rtklib_navsys_mask": 125,
+    "base_ecef_m": [
+      -2414266.92,
+      5386768.987,
+      2407460.031
+    ]
+  },
+  "python": "3.10.22",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.2",
+    "matplotlib": "3.10.9"
+  },
+  "truth_used_by_estimator": false,
+  "smoke_only": false,
+  "input_sha256": "f63a136fb40cb1f2fbf637af4eb46401e4dd03de67322852fc861349ca181240",
+  "output_policy": "Current causal state at 1 Hz; no revised past states are scored.",
+  "estimator_source_sha256": "096b1c69852bcf7076b812c656148cb6bfbcbefe104fc11337c9f38661afe678"
+}

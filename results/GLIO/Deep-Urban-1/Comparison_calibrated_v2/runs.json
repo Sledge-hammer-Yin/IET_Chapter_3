@@ -1,0 +1,20 @@
+{
+  "LC": {
+    "path": "/data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/LC_20261105_154322",
+    "wall_start_unix": 1793864602.286584,
+    "wall_end_unix": 1793866169.7954109,
+    "end_to_end_wall_s": 1567.508826971054
+  },
+  "TC_Pose": {
+    "path": "/data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/TC_Pose_20261105_160929",
+    "wall_start_unix": 1793866169.8932264,
+    "wall_end_unix": 1793867737.9600894,
+    "end_to_end_wall_s": 1568.0668630599976
+  },
+  "TC_Surface": {
+    "path": "/data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/TC_Surface_20261105_163538",
+    "wall_start_unix": 1793867738.0622387,
+    "wall_end_unix": 1793869452.058981,
+    "end_to_end_wall_s": 1713.9967422485352
+  }
+}

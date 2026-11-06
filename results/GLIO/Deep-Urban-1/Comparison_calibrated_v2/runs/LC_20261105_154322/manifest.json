@@ -1,0 +1,73 @@
+{
+  "sequence": "Deep-Urban-1",
+  "glio_commit": "332d19ff641f2ada9d9d75f2a6dab013d6015f76",
+  "host_os": "Ubuntu 24.04.5",
+  "container_os": "Ubuntu 18.04 / ROS Melodic",
+  "gtsam_version": "4.0.3",
+  "initialization": "Identical author-provided ECEF anchor and roll/pitch/yaw prior for all modes; derivation unverified. This is a shared-prior case study, not unaided initialization.",
+  "reference_use": "Offline position evaluation only. Reference positions and attitudes do not enter the estimator or the pose-point transfer.",
+  "calibration": "Published IMU-to-antenna lever arm [0, 0.86, -0.31] m; LiDAR-to-IMU [0, 0, 0.28] m; estimated IMU poses are transferred to the SPAN reference point [0, 0, 0.14] m for evaluation.",
+  "resource_policy": "Four logical CPUs, nice 10, CPU-only, private ROS master port 11371.",
+  "modes": {
+    "LC": {
+      "LCinLocal": true,
+      "enable_batch_fusion": false,
+      "sms_fusion_level": 0
+    },
+    "TC_Pose": {
+      "LCinLocal": false,
+      "enable_batch_fusion": true,
+      "sms_fusion_level": 0
+    },
+    "TC_Surface": {
+      "LCinLocal": false,
+      "enable_batch_fusion": true,
+      "sms_fusion_level": 1
+    }
+  },
+  "scope": "Controlled three-mode single-sequence case study; not an exact reproduction of the published GLIO numerical results.",
+  "prepared_input": {
+    "retained_message_counts": {
+      "/imu/data": 614782,
+      "/velodyne_points": 15355,
+      "/time_reference": 1537
+    },
+    "source": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/rosbag/UrbanNav-HK_Whampoa-20210521_sensors.bag",
+    "message_bytes_verified": true,
+    "dropped_startup_lidar_scans": [
+      {
+        "header_time_ns": 1621578524066174269,
+        "record_time_ns": 1621578524191487413
+      }
+    ],
+    "policy": "Center LiDAR, original 400 Hz IMU, and time reference only. Remove only LiDAR scans earlier than the first IMU header. Retained message bytes and timestamps are unchanged. Original archive and bag are untouched.",
+    "retained_message_sha256": {
+      "/imu/data": "f7392039b18036b8488b932e9b22686165aa1d5f8c194711267de98e3deb8705",
+      "/velodyne_points": "9c2769ca0a4ef7c8bfab1116c7dfdf7e2d912deda686c2261aa2193e7760168a",
+      "/time_reference": "be48007f19baa9c80660bcbdfb9adbe14a42a75b749021180a8a2c55d5aa8c5d"
+    },
+    "first_imu_header_ns": 1621578524125611066,
+    "prepared": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/processed/Deep-Urban-1_GLIO_input.bag"
+  },
+  "startup_note": "One raw startup LiDAR scan predates the first available IMU header and is excluded. No retained sensor message or timestamp is changed.",
+  "profile": "calibrated_v2",
+  "random_seed": 42,
+  "actual_gnss_factors": "Shared front end is LiDAR/IMU. LC adds gated DGNSS PVT factors. TC back ends use raw double-difference L1 pseudorange. Upstream sliding-window GNSS and Doppler blocks remain disabled.",
+  "source_patch_sha256": "138d84bd901db8cd4519af0e577ec75b4f575aa32e09ed836d507139314b01d8",
+  "source_files": {
+    "GLIO/include/factors/dd_psr_factor.hpp": "5b573e023c5e9231ed16db29b377ae0fad982e206dbe3f961cc2c99d43d04e22",
+    "GLIO/src/Estimator.cpp": "0f7fb27c2ea66bab6aab252eed463cc7f58df12c16a3a3b1f55aebb46a330e75",
+    "GLIO/include/utils/random_generator.hpp": "b833e54b71d17e73d247958a26afd2dd64209256b0d4c0f35420e8b0f66b835f"
+  },
+  "reference_point_body_m": [
+    0.0,
+    0.0,
+    0.14
+  ],
+  "gnss_lever_arm_body_m": [
+    0.0,
+    0.86,
+    -0.31
+  ],
+  "frozen_attitude_approximation": "TC GNSS lever arm is rotated using the nearest estimated pose when a factor is assembled; its orientation is held fixed inside that position-only factor."
+}

@@ -1,0 +1,46 @@
+{
+  "generated_utc": "2026-10-31T16:53:10.787129+00:00",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.10.22",
+  "physical_cores": 10,
+  "logical_cores": 16,
+  "ram_gib": 31.78421401977539,
+  "free_disk_gib": 65.56969451904297,
+  "sequences": {
+    "Deep-Urban-1": {
+      "input_epochs": 1537,
+      "dgnss_epochs": 541,
+      "spp_fallback_epochs": 412,
+      "missing_gnss_epochs": 584,
+      "longest_missing_gnss_s": 74,
+      "initialization_delay_s": 63.0,
+      "estimator_start_utc": "2021-05-21 06:29:48",
+      "scoring_start_utc": "2021-05-21 06:30:18",
+      "end_utc": "2021-05-21 06:54:21",
+      "reference_quality_counts": {
+        "1": 525,
+        "2": 796,
+        "3": 103,
+        "4": 87,
+        "5": 28
+      }
+    },
+    "Medium-Urban-1": {
+      "input_epochs": 786,
+      "dgnss_epochs": 207,
+      "spp_fallback_epochs": 209,
+      "missing_gnss_epochs": 370,
+      "longest_missing_gnss_s": 59,
+      "initialization_delay_s": 101.0,
+      "estimator_start_utc": "2021-05-17 02:34:37",
+      "scoring_start_utc": "2021-05-17 02:35:07",
+      "end_utc": "2021-05-17 02:46:01",
+      "reference_quality_counts": {
+        "1": 56,
+        "2": 590,
+        "3": 125,
+        "4": 16
+      }
+    }
+  }
+}

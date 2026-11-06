@@ -1,0 +1,23 @@
+	Command being timed: "rosbag play --quiet --rate 1.0 --queue 2000 /data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/processed/Deep-Urban-1_GLIO_input.bag --topics /velodyne_points /imu/data /time_reference"
+	User time (seconds): 4.27
+	System time (seconds): 10.32
+	Percent of CPU this job got: 0%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 25:37.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 73760
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 71
+	Minor (reclaiming a frame) page faults: 57315
+	Voluntary context switches: 1296060
+	Involuntary context switches: 121719
+	Swaps: 0
+	File system inputs: 121712
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

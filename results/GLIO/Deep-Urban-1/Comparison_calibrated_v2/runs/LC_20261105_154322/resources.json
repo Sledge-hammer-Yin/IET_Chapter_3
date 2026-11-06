@@ -1,0 +1,8 @@
+{
+  "sample_interval_s": 5,
+  "samples": 312,
+  "observed_wall_s": 1567.2902240579715,
+  "sampled_peak_combined_native_rss_mib": 3547.2109375,
+  "sampled_native_cpu_s": 1053.7,
+  "scope": "Estimator, LidarOdometry, Preprocessing, and GNSS preprocessor descended from this roslaunch only; sampled values, not exact OS peaks."
+}

@@ -1,0 +1,56 @@
+Bootstrap: localimage
+From: /data/users/taslab_zxp/installers/apptainer/images/ros-melodic-base.sif
+
+%labels
+    Description GLIO ROS Melodic CPU environment for taslab_zxp
+    GLIOCommit 332d19ff641f2ada9d9d75f2a6dab013d6015f76
+    GTSAMVersion 4.0.3
+
+%files
+    /data/users/taslab_zxp/projects/GLIO_ws/src/GLIO/support_files/ceres-solver.tar.gz /opt/src/ceres-solver.tar.gz
+
+%post
+    set -eu
+    export DEBIAN_FRONTEND=noninteractive
+    # These package changes apply only to this private container image.
+    apt-get update
+    apt-get install -y --no-install-recommends \
+        build-essential cmake curl ca-certificates pkg-config \
+        libatlas-base-dev libeigen3-dev libsuitesparse-dev \
+        libgoogle-glog-dev libgflags-dev libboost-all-dev \
+        ros-melodic-pcl-ros ros-melodic-pcl-conversions \
+        ros-melodic-novatel-msgs ros-melodic-tf ros-melodic-eigen-conversions \
+        python-numpy python-yaml python-scipy unzip p7zip-full time
+    cd /opt/src
+    tar -xzf ceres-solver.tar.gz
+    mkdir ceres-build
+    cd ceres-build
+    cmake ../ceres-solver -DCMAKE_BUILD_TYPE=Release \
+        -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF
+    make -j4
+    make install
+    cd /opt/src
+    curl --fail --location --retry 3 -o gtsam.tar.gz \
+        https://github.com/borglab/gtsam/archive/6425000775da29c93719f37dce3f2de38a0064ec.tar.gz
+    mkdir gtsam-source gtsam-build
+    tar -xzf gtsam.tar.gz -C gtsam-source --strip-components=1
+    cd gtsam-build
+    cmake ../gtsam-source -DCMAKE_BUILD_TYPE=Release \
+        -DGTSAM_BUILD_TESTS=OFF -DGTSAM_BUILD_EXAMPLES_ALWAYS=OFF \
+        -DGTSAM_BUILD_UNSTABLE=OFF -DGTSAM_WITH_TBB=OFF \
+        -DGTSAM_USE_SYSTEM_EIGEN=ON -DGTSAM_BUILD_WITH_MARCH_NATIVE=OFF
+    make -j4
+    make install
+    ldconfig
+    # Remove only build intermediates created inside this disposable image.
+    rm -rf /opt/src/ceres-solver /opt/src/ceres-build /opt/src/gtsam-source /opt/src/gtsam-build
+    rm -f /opt/src/ceres-solver.tar.gz /opt/src/gtsam.tar.gz
+    apt-get clean
+    rm -rf /var/lib/apt/lists/*
+
+%environment
+    export OMP_NUM_THREADS=4
+    export OPENBLAS_NUM_THREADS=1
+
+%runscript
+    exec "$@"

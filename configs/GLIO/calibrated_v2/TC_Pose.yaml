@@ -1,0 +1,72 @@
+Estimator:
+  edgeDSRange: 0.4
+  enable_batch_fusion: true
+  gnssCovThreshold: 5
+  kd_max_radius: 1.5
+  lc_icp_thres: 0.2
+  lc_map_width: 25
+  lc_search_radius: 25
+  lc_time_thres: 30.0
+  lidar_const: 7.5
+  local_map_width: 50
+  loop_closure_on: false
+  mapping_interval: 3
+  max_num_iter: 100
+  poseCovThreshold: 10
+  ql2b_w: 1
+  ql2b_x: 0
+  ql2b_y: 0
+  ql2b_z: 0
+  save_pcd: false
+  search_range: 6
+  slide_window_width: 5
+  sms_fusion_level: 0
+  surfDSRange: 0.9
+  surf_dist_thres: 0.18
+  tl2b_x: 0
+  tl2b_y: 0
+  tl2b_z: 0.28
+IMU:
+  acc_n: 0.003993957088823881
+  acc_w: 6.435665935353257e-05
+  gravity: 9.80511
+  gyr_n: 0.0015636343949698187
+  gyr_w: 3.564031869636761e-05
+  imu_topic: /imu/data
+common:
+  data_set: HK
+  frame_id: GLIO
+feature_selection:
+  batch_feature_res_num: 25
+  batch_rand_set_num: 400
+  feature_res_num: 100
+  rand_set_num: 300
+  random_select: true
+initialization:
+  Euler_p: 0.098
+  Euler_r: 0.6825
+  Euler_y: 60.8
+  anc_ecef_x: -2419233.42
+  anc_ecef_y: 5385473.13
+  anc_ecef_z: 2405341.3
+  lever_arm_x: 0.0
+  lever_arm_y: 0.86
+  lever_arm_z: -0.31
+  station_x_: -2414266.92
+  station_y_: 5386768.987
+  station_z_: 2407460.031
+  timeshift: 18
+  yaw_enu_local: 0
+lidar_odometry:
+  ds_rate: 1
+  edgeThreshold: 1.0
+  if_to_deskew: false
+  lidar_topic: /velodyne_points
+  line_num: 32
+  max_num_iter: 12
+  scan_match_cnt: 1
+  surfThreshold: 0.1
+visualization:
+  GTinLocal: false
+  LCinLocal: false
+  RTKinLocal: true

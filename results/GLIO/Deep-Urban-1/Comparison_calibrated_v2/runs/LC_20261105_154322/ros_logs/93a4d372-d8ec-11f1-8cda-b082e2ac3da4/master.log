@@ -1,0 +1,324 @@
+[rosmaster.main][INFO] 2026-11-05 15:43:22,875: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2026-11-05 15:43:22,875: Starting ROS Master Node
+[xmlrpc][INFO] 2026-11-05 15:43:22,875: XML-RPC server binding to 127.0.0.1:11371
+[xmlrpc][INFO] 2026-11-05 15:43:22,875: Started XML-RPC server [http://127.0.0.1:11371/]
+[xmlrpc][INFO] 2026-11-05 15:43:22,875: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2026-11-05 15:43:22,875: Master initialized: port[11371], uri[http://127.0.0.1:11371/]
+[rosmaster.master][INFO] 2026-11-05 15:43:22,900: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,900: +PARAM [/roslaunch/uris/host_127_0_0_1__34827] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/roverMeasureFile] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/use_sim_time] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/initialization/Euler_y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/feature_selection/random_select] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/initialization/station_z_] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/initialization/Euler_p] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/initialization/lever_arm_z] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/Estimator/surfDSRange] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/initialization/lever_arm_x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/initialization/station_x_] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/lidar_odometry/line_num] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/lidar_odometry/surfThreshold] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/Estimator/lc_time_thres] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/initialization/station_y_] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/lidar_odometry/max_num_iter] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/Estimator/enable_batch_fusion] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/te_time] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/mode] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/Estimator/poseCovThreshold] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/Estimator/slide_window_width] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/lidar_odometry/lidar_topic] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/initialization/Euler_r] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/Estimator/search_range] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/Estimator/lc_icp_thres] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/initialization/anc_ecef_x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/lidar_odometry/if_to_deskew] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/baseMeasureFile] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/Estimator/kd_max_radius] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,913: +PARAM [/Estimator/sms_fusion_level] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/feature_selection/batch_feature_res_num] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/ts_time] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/ql2b_y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/ql2b_x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/ql2b_z] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/IMU/gyr_n] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/save_pcd] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/result_path] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/tl2b_z] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/initialization/yaw_enu_local] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/tl2b_x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/tl2b_y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/feature_selection/batch_rand_set_num] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/mapping_interval] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/IMU/gyr_w] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/IMU/acc_w] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/IMU/imu_topic] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/nf] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/max_num_iter] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/feature_selection/rand_set_num] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/feature_selection/feature_res_num] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/common/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/lidar_odometry/ds_rate] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/IMU/gravity] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/out_folder] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/lidar_odometry/edgeThreshold] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/ql2b_w] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/loop_closure_on] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/lc_map_width] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/lidar_odometry/scan_match_cnt] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/visualization/LCinLocal] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/gnssCovThreshold] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/edgeDSRange] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/initialization/lever_arm_y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/lidar_const] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/initialization/anc_ecef_z] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/surf_dist_thres] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/EmpFile] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/initialization/timeshift] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/soltype] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/initialization/anc_ecef_y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/common/data_set] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/IMU/acc_n] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/visualization/GTinLocal] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/local_map_width] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/visualization/RTKinLocal] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,914: +PARAM [/Estimator/lc_search_radius] by /roslaunch
+[rosmaster.master][INFO] 2026-11-05 15:43:22,957: +SERVICE [/rosout/get_loggers] /rosout http://127.0.0.1:46021/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,957: +PUB [/rosout] /GLIO http://127.0.0.1:41913/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,957: +PUB [/rosout] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,958: +SERVICE [/rosout/set_logger_level] /rosout http://127.0.0.1:46021/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,958: +SERVICE [/GLIO/get_loggers] /GLIO http://127.0.0.1:41913/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,958: +SERVICE [/gnss_preprocessor_node/get_loggers] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,958: +SERVICE [/GLIO/set_logger_level] /GLIO http://127.0.0.1:41913/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,958: +SERVICE [/gnss_preprocessor_node/set_logger_level] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,959: +PUB [/tf] /GLIO http://127.0.0.1:41913/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,959: +CACHEDPARAM [/rosout_disable_topics_generation] by /gnss_preprocessor_node
+[rosmaster.master][INFO] 2026-11-05 15:43:22,959: +PUB [/rosout_agg] /rosout http://127.0.0.1:46021/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,960: +PUB [/gnss_preprocessor_node/postpos_odometry] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,960: +PUB [/gnss_preprocessor_node/ECEFSolutionRTK] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,960: +PUB [/gnss_preprocessor_node/ENUIntegerRTK] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,960: +PUB [/gnss_preprocessor_node/GNSSPsrCarStation1] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,960: +PUB [/gnss_preprocessor_node/WLSENURTKLIB] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,960: +SUB [/rosout] /rosout http://127.0.0.1:46021/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,960: +PUB [/gnss_preprocessor_node/GNSSPsrCarRov1] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,960: +PUB [/gnss_preprocessor_node/WLSENUGoGPS] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 15:43:22,960: +PUB [/gnss_preprocessor_node/GNSSDopVelRov1] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,000: +PUB [/rosout] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,000: +PUB [/rosout] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,000: +SERVICE [/LidarOdometry/get_loggers] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,000: +SERVICE [/Preprocessing/get_loggers] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,000: +SERVICE [/LidarOdometry/set_logger_level] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,000: +SERVICE [/Preprocessing/set_logger_level] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,003: +SUB [/edge_features] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,004: +SUB [/surf_features] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,004: +SUB [/lidar_cloud_cutted] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,005: +PUB [/laser_cloud_corner_last] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,005: +SUB [/velodyne_points] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,005: +PUB [/laser_cloud_surf_last] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,005: +PUB [/odom] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,005: +PUB [/each_odom] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,005: +PUB [/path] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,005: +SUB [/imu/data] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,005: +PUB [/full_point_cloud] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,006: +PUB [/surf_features] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,006: +PUB [/full_point_cloud_map] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,006: +PUB [/edge_features] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,006: +CACHEDPARAM [/rosout_disable_topics_generation] by /LidarOdometry
+[rosmaster.master][INFO] 2026-11-05 15:43:23,006: +PUB [/lidar_cloud_cutted] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,006: +CACHEDPARAM [/rosout_disable_topics_generation] by /Preprocessing
+[rosmaster.master][INFO] 2026-11-05 15:43:23,076: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:41913/', 'http://127.0.0.1:37083/', 'http://127.0.0.1:43451/']
+[rosmaster.master][INFO] 2026-11-05 15:43:23,076: publisherUpdate[/surf_features] -> http://127.0.0.1:43451/ ['http://127.0.0.1:33741/']
+[rosmaster.master][INFO] 2026-11-05 15:43:23,077: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:41913/', 'http://127.0.0.1:37083/', 'http://127.0.0.1:43451/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 15:43:23,077: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:41913/', 'http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:33741/']
+[rosmaster.master][INFO] 2026-11-05 15:43:23,077: publisherUpdate[/surf_features] -> http://127.0.0.1:43451/ ['http://127.0.0.1:33741/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 15:43:23,077: publisherUpdate[/edge_features] -> http://127.0.0.1:43451/ ['http://127.0.0.1:33741/']
+[rosmaster.master][INFO] 2026-11-05 15:43:23,077: publisherUpdate[/edge_features] -> http://127.0.0.1:43451/ ['http://127.0.0.1:33741/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 15:43:23,077: publisherUpdate[/lidar_cloud_cutted] -> http://127.0.0.1:43451/ ['http://127.0.0.1:33741/']
+[rosmaster.master][INFO] 2026-11-05 15:43:23,078: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:41913/', 'http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:33741/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 15:43:23,078: publisherUpdate[/lidar_cloud_cutted] -> http://127.0.0.1:43451/ ['http://127.0.0.1:33741/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 15:43:23,092: +PUB [/rosout] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,093: +SERVICE [/Estimator/get_loggers] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,093: +SERVICE [/Estimator/set_logger_level] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,101: +PUB [/sub_global_cloud] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,101: +SUB [/full_point_cloud] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,102: +SUB [/laser_cloud_surf_last] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,102: +SUB [/odom] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,102: +SUB [/each_odom] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,103: +SUB [/imu/data] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,103: +PUB [/laser_cloud_map] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,103: +PUB [/odom_mapped] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,103: +PUB [/path_batch] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,103: +PUB [/trajectory] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,103: +PUB [/map_surf_less_flat] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,103: +PUB [/raw_scan] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,103: +PUB [/odom_rtk_ini] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,103: +PUB [/Estimator/rtk_ini_path] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,103: +PUB [/Estimator/gnss_fused_lla] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,103: +PUB [/Estimator/tc_enu_path] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,104: +PUB [/Estimator/lc_enu_path] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,104: +SUB [/gnss_preprocessor_node/ECEFSolutionRTK] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,104: +SUB [/gnss_preprocessor_node/GNSSPsrCarRov1] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,105: +SUB [/gnss_preprocessor_node/GNSSPsrCarStation1] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,105: +PUB [/novatel_data/inspvax] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,105: +SUB [/novatel_data/inspvax] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,105: +PUB [/Estimator/path_gt] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 15:43:23,176: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:41913/', 'http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:33741/', 'http://127.0.0.1:43821/']
+[rosmaster.master][INFO] 2026-11-05 15:43:23,177: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:41913/', 'http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:33741/', 'http://127.0.0.1:43821/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 15:43:23,177: +CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.master][INFO] 2026-11-05 15:43:29,251: +CACHEDPARAM [/rosout_disable_topics_generation] by /Estimator
+[rosmaster.master][INFO] 2026-11-05 15:43:37,583: +PUB [/rosout] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 15:43:37,583: +SERVICE [/play_1793864617580098728/get_loggers] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 15:43:37,583: +SERVICE [/play_1793864617580098728/set_logger_level] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 15:43:37,584: +PUB [/clock] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 15:43:37,584: +SERVICE [/play_1793864617580098728/pause_playback] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 15:43:37,584: +CACHEDPARAM [/rosout_disable_topics_generation] by /play_1793864617580098728
+[rosmaster.master][INFO] 2026-11-05 15:43:37,647: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:41913/', 'http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:33741/', 'http://127.0.0.1:43821/', 'http://127.0.0.1:41151/']
+[rosmaster.master][INFO] 2026-11-05 15:43:37,647: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:41913/', 'http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:33741/', 'http://127.0.0.1:43821/', 'http://127.0.0.1:41151/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 15:43:37,654: +PUB [/imu/data] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 15:43:37,654: +PUB [/velodyne_points] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 15:43:37,654: +PUB [/time_reference] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 15:43:37,747: publisherUpdate[/imu/data] -> http://127.0.0.1:33741/ ['http://127.0.0.1:41151/']
+[rosmaster.master][INFO] 2026-11-05 15:43:37,748: publisherUpdate[/imu/data] -> http://127.0.0.1:43821/ ['http://127.0.0.1:41151/']
+[rosmaster.master][INFO] 2026-11-05 15:43:37,748: publisherUpdate[/imu/data] -> http://127.0.0.1:43821/ ['http://127.0.0.1:41151/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 15:43:37,748: publisherUpdate[/imu/data] -> http://127.0.0.1:33741/ ['http://127.0.0.1:41151/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 15:43:37,749: publisherUpdate[/velodyne_points] -> http://127.0.0.1:33741/ ['http://127.0.0.1:41151/']
+[rosmaster.master][INFO] 2026-11-05 15:43:37,749: publisherUpdate[/velodyne_points] -> http://127.0.0.1:33741/ ['http://127.0.0.1:41151/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 15:43:39,995: +PUB [/tf] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:14,961: -PUB [/rosout] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 16:09:14,962: -PUB [/clock] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 16:09:14,962: -PUB [/imu/data] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 16:09:14,962: -PUB [/velodyne_points] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 16:09:14,962: -PUB [/time_reference] /play_1793864617580098728 http://127.0.0.1:41151/
+[rosmaster.master][INFO] 2026-11-05 16:09:14,962: -SERVICE [/play_1793864617580098728/get_loggers] /play_1793864617580098728 rosrpc://127.0.0.1:34719
+[rosmaster.master][INFO] 2026-11-05 16:09:14,962: -SERVICE [/play_1793864617580098728/set_logger_level] /play_1793864617580098728 rosrpc://127.0.0.1:34719
+[rosmaster.master][INFO] 2026-11-05 16:09:14,962: -SERVICE [/play_1793864617580098728/pause_playback] /play_1793864617580098728 rosrpc://127.0.0.1:34719
+[rosmaster.master][INFO] 2026-11-05 16:09:14,963: -CACHEDPARAM [/rosout_disable_topics_generation] by /play_1793864617580098728
+[rosmaster.master][INFO] 2026-11-05 16:09:15,038: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:41913/', 'http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:33741/', 'http://127.0.0.1:43821/']
+[rosmaster.master][INFO] 2026-11-05 16:09:15,038: publisherUpdate[/imu/data] -> http://127.0.0.1:33741/ []
+[rosmaster.master][INFO] 2026-11-05 16:09:15,038: publisherUpdate[/imu/data] -> http://127.0.0.1:43821/ []
+[rosmaster.master][INFO] 2026-11-05 16:09:15,039: publisherUpdate[/imu/data] -> http://127.0.0.1:33741/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:15,039: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:41913/', 'http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:33741/', 'http://127.0.0.1:43821/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:15,039: publisherUpdate[/imu/data] -> http://127.0.0.1:43821/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:15,039: publisherUpdate[/velodyne_points] -> http://127.0.0.1:33741/ []
+[rosmaster.master][INFO] 2026-11-05 16:09:15,039: publisherUpdate[/velodyne_points] -> http://127.0.0.1:33741/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:27,075: -PUB [/rosout] /GLIO http://127.0.0.1:41913/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,075: -PUB [/tf] /GLIO http://127.0.0.1:41913/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,075: -SERVICE [/GLIO/get_loggers] /GLIO rosrpc://127.0.0.1:52807
+[rosmaster.master][INFO] 2026-11-05 16:09:27,075: -SERVICE [/GLIO/set_logger_level] /GLIO rosrpc://127.0.0.1:52807
+[rosmaster.master][INFO] 2026-11-05 16:09:27,098: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:33741/', 'http://127.0.0.1:43821/']
+[rosmaster.master][INFO] 2026-11-05 16:09:27,098: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:33741/', 'http://127.0.0.1:43821/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:27,098: -PUB [/rosout] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,099: -PUB [/surf_features] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,099: -PUB [/edge_features] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,099: -PUB [/lidar_cloud_cutted] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,099: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:43821/']
+[rosmaster.master][INFO] 2026-11-05 16:09:27,099: -SUB [/velodyne_points] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,099: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:37083/', 'http://127.0.0.1:43451/', 'http://127.0.0.1:43821/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:27,099: -SUB [/imu/data] /Preprocessing http://127.0.0.1:33741/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,099: publisherUpdate[/surf_features] -> http://127.0.0.1:43451/ []
+[rosmaster.master][INFO] 2026-11-05 16:09:27,099: -SERVICE [/Preprocessing/get_loggers] /Preprocessing rosrpc://127.0.0.1:46735
+[rosmaster.master][INFO] 2026-11-05 16:09:27,100: -PUB [/rosout] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,100: -PUB [/sub_global_cloud] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,100: publisherUpdate[/surf_features] -> http://127.0.0.1:43451/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:27,100: -SERVICE [/Preprocessing/set_logger_level] /Preprocessing rosrpc://127.0.0.1:46735
+[rosmaster.master][INFO] 2026-11-05 16:09:27,100: publisherUpdate[/edge_features] -> http://127.0.0.1:43451/ []
+[rosmaster.master][INFO] 2026-11-05 16:09:27,100: publisherUpdate[/edge_features] -> http://127.0.0.1:43451/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:27,100: -PUB [/laser_cloud_map] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,100: publisherUpdate[/lidar_cloud_cutted] -> http://127.0.0.1:43451/ []
+[rosmaster.master][INFO] 2026-11-05 16:09:27,100: -CACHEDPARAM [/rosout_disable_topics_generation] by /Preprocessing
+[rosmaster.master][INFO] 2026-11-05 16:09:27,100: -PUB [/odom_mapped] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,100: publisherUpdate[/lidar_cloud_cutted] -> http://127.0.0.1:43451/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: -PUB [/path_batch] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:37083/', 'http://127.0.0.1:43451/']
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:37083/', 'http://127.0.0.1:43451/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: -PUB [/trajectory] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: -PUB [/map_surf_less_flat] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: -PUB [/raw_scan] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: -PUB [/odom_rtk_ini] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: -PUB [/Estimator/rtk_ini_path] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: -PUB [/Estimator/gnss_fused_lla] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: -PUB [/Estimator/tc_enu_path] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: -PUB [/Estimator/lc_enu_path] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: -PUB [/novatel_data/inspvax] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,101: -PUB [/Estimator/path_gt] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -PUB [/tf] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -SUB [/full_point_cloud] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -SUB [/laser_cloud_surf_last] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -SUB [/odom] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -SUB [/each_odom] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -SUB [/imu/data] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -SUB [/gnss_preprocessor_node/ECEFSolutionRTK] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -SUB [/gnss_preprocessor_node/GNSSPsrCarRov1] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -SUB [/gnss_preprocessor_node/GNSSPsrCarStation1] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -SUB [/novatel_data/inspvax] /Estimator http://127.0.0.1:43821/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -SERVICE [/Estimator/get_loggers] /Estimator rosrpc://127.0.0.1:33675
+[rosmaster.master][INFO] 2026-11-05 16:09:27,102: -SERVICE [/Estimator/set_logger_level] /Estimator rosrpc://127.0.0.1:33675
+[rosmaster.master][INFO] 2026-11-05 16:09:27,103: -CACHEDPARAM [/rosout_disable_topics_generation] by /Estimator
+[rosmaster.master][INFO] 2026-11-05 16:09:27,190: -PUB [/rosout] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,190: -PUB [/gnss_preprocessor_node/postpos_odometry] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,190: -PUB [/gnss_preprocessor_node/ECEFSolutionRTK] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,190: -PUB [/gnss_preprocessor_node/ENUIntegerRTK] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,190: -PUB [/gnss_preprocessor_node/GNSSPsrCarStation1] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,190: -PUB [/gnss_preprocessor_node/WLSENURTKLIB] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,191: -PUB [/gnss_preprocessor_node/GNSSPsrCarRov1] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,191: -PUB [/gnss_preprocessor_node/WLSENUGoGPS] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,191: -PUB [/gnss_preprocessor_node/GNSSDopVelRov1] /gnss_preprocessor_node http://127.0.0.1:37083/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,191: -SERVICE [/gnss_preprocessor_node/get_loggers] /gnss_preprocessor_node rosrpc://127.0.0.1:37915
+[rosmaster.master][INFO] 2026-11-05 16:09:27,191: -SERVICE [/gnss_preprocessor_node/set_logger_level] /gnss_preprocessor_node rosrpc://127.0.0.1:37915
+[rosmaster.master][INFO] 2026-11-05 16:09:27,191: -CACHEDPARAM [/rosout_disable_topics_generation] by /gnss_preprocessor_node
+[rosmaster.master][INFO] 2026-11-05 16:09:27,199: publisherUpdate[/novatel_data/inspvax] -> http://127.0.0.1:43821/ []
+[rosmaster.master][INFO] 2026-11-05 16:09:27,199: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:43451/']
+[rosmaster.master][INFO] 2026-11-05 16:09:27,199: publisherUpdate[/novatel_data/inspvax] -> http://127.0.0.1:43821/ []: sec=0.00, exception=[Errno 111] Connection refused
+[rosmaster.master][INFO] 2026-11-05 16:09:27,199: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ ['http://127.0.0.1:43451/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:27,201: -PUB [/rosout] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,201: -PUB [/laser_cloud_corner_last] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,201: -PUB [/laser_cloud_surf_last] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,201: -PUB [/odom] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,201: -PUB [/each_odom] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,201: -PUB [/path] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,201: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ []
+[rosmaster.master][INFO] 2026-11-05 16:09:27,201: -PUB [/full_point_cloud] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.threadpool][ERROR] 2026-11-05 16:09:27,202: Traceback (most recent call last):
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1243, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1602, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1283, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1311, in single_request
+    self.send_content(h, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1459, in send_content
+    connection.endheaders(request_body)
+  File "/usr/lib/python2.7/httplib.py", line 1095, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 898, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 860, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 837, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+
+[rosmaster.master][INFO] 2026-11-05 16:09:27,202: publisherUpdate[/rosout] -> http://127.0.0.1:46021/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-05 16:09:27,202: -PUB [/full_point_cloud_map] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,202: -SUB [/edge_features] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,202: -SUB [/surf_features] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,202: -SUB [/lidar_cloud_cutted] /LidarOdometry http://127.0.0.1:43451/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,202: -SERVICE [/LidarOdometry/get_loggers] /LidarOdometry rosrpc://127.0.0.1:38817
+[rosmaster.master][INFO] 2026-11-05 16:09:27,202: -SERVICE [/LidarOdometry/set_logger_level] /LidarOdometry rosrpc://127.0.0.1:38817
+[rosmaster.master][INFO] 2026-11-05 16:09:27,202: -CACHEDPARAM [/rosout_disable_topics_generation] by /LidarOdometry
+[rosmaster.master][INFO] 2026-11-05 16:09:27,503: -PUB [/rosout_agg] /rosout http://127.0.0.1:46021/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,504: -SUB [/rosout] /rosout http://127.0.0.1:46021/
+[rosmaster.master][INFO] 2026-11-05 16:09:27,504: -SERVICE [/rosout/get_loggers] /rosout rosrpc://127.0.0.1:55643
+[rosmaster.master][INFO] 2026-11-05 16:09:27,504: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://127.0.0.1:55643
+[rosmaster.master][INFO] 2026-11-05 16:09:27,504: -CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.main][INFO] 2026-11-05 16:09:27,594: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2026-11-05 16:09:27,594: stopping master...
+[rospy.core][INFO] 2026-11-05 16:09:27,595: signal_shutdown [atexit]

@@ -1,0 +1,4 @@
+method,native_rows,native_start_utc,native_end_utc,eligible_reference_epochs,valid_reference_epochs,coverage_pct,accepted_lc_gnss_factors
+LC,4598,1621578524.266535,1621580058.579293,1516,1514,99.868074,14
+TC-Pose,4598,1621578524.266535,1621580058.579293,1516,1514,99.868074,not applicable
+TC-Surface,4601,1621578524.266535,1621580059.980831,1516,1515,99.934037,not applicable

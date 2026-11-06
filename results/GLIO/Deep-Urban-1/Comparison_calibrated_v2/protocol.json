@@ -1,0 +1,196 @@
+{
+  "version": "calibrated_v2",
+  "sequence": "Deep-Urban-1",
+  "modes": [
+    "LC",
+    "TC_Pose",
+    "TC_Surface"
+  ],
+  "assets": {
+    "Deep-Urban-1_GLIO_input.bag": {
+      "path": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/processed/Deep-Urban-1_GLIO_input.bag",
+      "bytes": 21099410304,
+      "mtime_ns": 1793852158779641013,
+      "sha256": "325198499b84c456c2407e5239131e54709a9079bc838c3408587c1cf652dd39"
+    },
+    "20210521.medium-urban.whampoa.ublox.f9p.obs": {
+      "path": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/gnss/20210521.medium-urban.whampoa.ublox.f9p.obs",
+      "bytes": 5760663,
+      "mtime_ns": 1793849593476066914,
+      "sha256": "484bdafe37a6792ff9b967cba0927a36b322a4e18da05bb3ef8b6635d3fe2163"
+    },
+    "hksc1410.21o": {
+      "path": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/gnss/hksc1410.21o",
+      "bytes": 20377114,
+      "mtime_ns": 1793849593776067650,
+      "sha256": "cc0b03ed29d781e4ad8c0989da09478dc1c491824aa41dae08326d3a21b330e8"
+    },
+    "hksc141g.nav": {
+      "path": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/gnss/hksc141g.nav",
+      "bytes": 139060,
+      "mtime_ns": 1793849593786067675,
+      "sha256": "5c93296f70ef3ce1c37a813c8df064f950b900214185f65bc19a7757948aabfe"
+    },
+    "UrbanNav_whampoa_raw.txt": {
+      "path": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/ground_truth/UrbanNav_whampoa_raw.txt",
+      "bytes": 274298,
+      "mtime_ns": 1793849593800067709,
+      "sha256": "cb35bc9ebfb171147d290672a46b9d7426475501c922d84ae81edde92c3ba272"
+    },
+    "extrinsic.yaml": {
+      "path": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/calibration/extrinsic.yaml",
+      "bytes": 3073,
+      "mtime_ns": 1793849593808067729,
+      "sha256": "76b2e12056bb35b2d829fdbbc56e05f36cf30e1ce98eea3a5e73c7a27d8ec181"
+    },
+    "xsens_imu_param.yaml": {
+      "path": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/calibration/xsens_imu_param.yaml",
+      "bytes": 750,
+      "mtime_ns": 1793849593816067748,
+      "sha256": "55da278a30572015d2ab4024ae1dfc11abb1fb54f252498ce318152c6d39ecd5"
+    }
+  },
+  "configs": {
+    "LC": {
+      "yaml": "a85683dac75991920c7edde4f6684890420e602381faf8cb817a0f9cb1209c97",
+      "launch": "7ba9f736ba082e3b344cb011475c592d777bf0bff77c877e41ba81b7de8c4f89"
+    },
+    "TC_Pose": {
+      "yaml": "b4b6215fae75128a67898f2c01c984af179189c339172b07c1e70faf741672b7",
+      "launch": "1daaa586e51cb2c26a012b63f0cdef2f49d6101615c577c40d6cfb11af76dbb7"
+    },
+    "TC_Surface": {
+      "yaml": "592cb8c9d671b771f0bb6603ae8bcceeaa18c5b12bd46865714691afe3443db2",
+      "launch": "09e8c70a8f2c9f54c9ebb7498d143ddbeeb1c9f5a484781143e9dc09af095dce"
+    }
+  },
+  "estimator_binary": {
+    "path": "/data/users/taslab_zxp/projects/GLIO_ws/devel/lib/GLIO/Estimator",
+    "bytes": 4506080,
+    "mtime_ns": 1793863885687741054,
+    "sha256": "8d82691af30f2cba47fc5405b3bd80ad8571beaabb3bbb95e839d78f2485ca00"
+  },
+  "container": {
+    "path": "/data/users/taslab_zxp/installers/apptainer/images/glio-melodic.sif",
+    "bytes": 718823424,
+    "mtime_ns": 1793849961876204031,
+    "sha256": "e24bd40c34cca61b4035b0fec75059f5f695f87026f63573e780273a89ec6af8"
+  },
+  "profile_manifest_sha256": "0d0266db3fab000f48958d255a2040ca1d9e524d522439a447b53a137ac1cbd1",
+  "source_files": {
+    "GLIO/include/factors/dd_psr_factor.hpp": "5b573e023c5e9231ed16db29b377ae0fad982e206dbe3f961cc2c99d43d04e22",
+    "GLIO/src/Estimator.cpp": "0f7fb27c2ea66bab6aab252eed463cc7f58df12c16a3a3b1f55aebb46a330e75",
+    "GLIO/include/utils/random_generator.hpp": "b833e54b71d17e73d247958a26afd2dd64209256b0d4c0f35420e8b0f66b835f"
+  },
+  "feature_sampling_seed": 42,
+  "replay_rate": 1.0,
+  "duration_seconds": 0,
+  "resources": {
+    "logical_cpus": "0-3",
+    "nice": 10,
+    "virtual_memory_limit_gib_per_process": 24,
+    "gpu": false
+  },
+  "evaluation": {
+    "reference_point": "SPAN-CPT",
+    "body_T_span_translation_m": [
+      0,
+      0,
+      0.14
+    ],
+    "start_utc": 1621578545.0,
+    "end_utc": 1621580060.0,
+    "settling_seconds": 20,
+    "max_interpolation_bracket_s": 1.0,
+    "main_epochs": "Intersection of the same fixed 1 Hz reference epochs valid in all three native outputs",
+    "alignment": "None",
+    "reference_quality": "All available raw quality codes, with per-code results also reported",
+    "rpe_interval_s": 10
+  },
+  "shared_config": {
+    "Estimator": {
+      "edgeDSRange": 0.4,
+      "gnssCovThreshold": 5,
+      "kd_max_radius": 1.5,
+      "lc_icp_thres": 0.2,
+      "lc_map_width": 25,
+      "lc_search_radius": 25,
+      "lc_time_thres": 30.0,
+      "lidar_const": 7.5,
+      "local_map_width": 50,
+      "loop_closure_on": false,
+      "mapping_interval": 3,
+      "max_num_iter": 100,
+      "poseCovThreshold": 10,
+      "ql2b_w": 1,
+      "ql2b_x": 0,
+      "ql2b_y": 0,
+      "ql2b_z": 0,
+      "save_pcd": false,
+      "search_range": 6,
+      "slide_window_width": 5,
+      "surfDSRange": 0.9,
+      "surf_dist_thres": 0.18,
+      "tl2b_x": 0,
+      "tl2b_y": 0,
+      "tl2b_z": 0.28
+    },
+    "IMU": {
+      "acc_n": 0.003993957088823881,
+      "acc_w": 6.435665935353257e-05,
+      "gravity": 9.80511,
+      "gyr_n": 0.0015636343949698187,
+      "gyr_w": 3.564031869636761e-05,
+      "imu_topic": "/imu/data"
+    },
+    "common": {
+      "data_set": "HK",
+      "frame_id": "GLIO"
+    },
+    "feature_selection": {
+      "batch_feature_res_num": 25,
+      "batch_rand_set_num": 400,
+      "feature_res_num": 100,
+      "rand_set_num": 300,
+      "random_select": true
+    },
+    "initialization": {
+      "Euler_p": 0.098,
+      "Euler_r": 0.6825,
+      "Euler_y": 60.8,
+      "anc_ecef_x": -2419233.42,
+      "anc_ecef_y": 5385473.13,
+      "anc_ecef_z": 2405341.3,
+      "lever_arm_x": 0.0,
+      "lever_arm_y": 0.86,
+      "lever_arm_z": -0.31,
+      "station_x_": -2414266.92,
+      "station_y_": 5386768.987,
+      "station_z_": 2407460.031,
+      "timeshift": 18,
+      "yaw_enu_local": 0
+    },
+    "lidar_odometry": {
+      "ds_rate": 1,
+      "edgeThreshold": 1.0,
+      "if_to_deskew": false,
+      "lidar_topic": "/velodyne_points",
+      "line_num": 32,
+      "max_num_iter": 12,
+      "scan_match_cnt": 1,
+      "surfThreshold": 0.1
+    },
+    "visualization": {
+      "GTinLocal": false,
+      "RTKinLocal": true
+    }
+  },
+  "limitations": [
+    "One full run per mode on one ground-vehicle sequence; no significance or universal-superiority claim.",
+    "Shared supplied initial position/orientation prior, with unverified derivation; no truth fitted alignment or online reference input.",
+    "Public antenna translation is manually measured (reported uncertainty about 0.1 m).",
+    "Feature sampling seed is fixed, but asynchronous scheduling can still affect floating-point results.",
+    "TC factors use a frozen nearest-estimated-attitude lever offset when assembled; rotational lever-arm Jacobians are not added.",
+    "The upstream shared sliding-window GNSS and Doppler blocks are disabled; the active TC GNSS input is DD pseudorange."
+  ]
+}

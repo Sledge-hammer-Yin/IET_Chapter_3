@@ -1,0 +1,13 @@
+name: iet-chapter3-b123
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.26.4
+  - scipy=1.15.2
+  - pandas=2.2.3
+  - matplotlib-base=3.10.9
+  - gtsam=4.2.0
+  - psutil=7.2.2
+  - pyyaml=6.0.3
+

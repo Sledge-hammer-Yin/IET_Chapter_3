@@ -1,0 +1,129 @@
+WARNING: Package name "GLIO" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "nlosExclusion" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0m[ INFO] [1793867738.880760173]: [1;32m---->[0m GLIO Started.[0m
+result_path para/data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/TC_Surface_20261105_163538/
+[33m[ WARN] [1793867745.034645714]: waiting for station gnss message![0m
+... logging to /data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/TC_Surface_20261105_163538/ros_logs/e0b775be-d8f3-11f1-a02b-b082e2ac3da4/roslaunch-taslab-service01-3662118.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/data/users/taslab_zxp/projects/GLIO_setup/profiles/calibrated_v2/configs/TC_Surface.launch
+[1mstarted roslaunch server http://127.0.0.1:45473/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /EmpFile: /data/users/tasla...
+ * /Estimator/edgeDSRange: 0.4
+ * /Estimator/enable_batch_fusion: True
+ * /Estimator/gnssCovThreshold: 5
+ * /Estimator/kd_max_radius: 1.5
+ * /Estimator/lc_icp_thres: 0.2
+ * /Estimator/lc_map_width: 25
+ * /Estimator/lc_search_radius: 25
+ * /Estimator/lc_time_thres: 30.0
+ * /Estimator/lidar_const: 7.5
+ * /Estimator/local_map_width: 50
+ * /Estimator/loop_closure_on: False
+ * /Estimator/mapping_interval: 3
+ * /Estimator/max_num_iter: 100
+ * /Estimator/poseCovThreshold: 10
+ * /Estimator/ql2b_w: 1
+ * /Estimator/ql2b_x: 0
+ * /Estimator/ql2b_y: 0
+ * /Estimator/ql2b_z: 0
+ * /Estimator/result_path: /data/users/tasla...
+ * /Estimator/save_pcd: False
+ * /Estimator/search_range: 6
+ * /Estimator/slide_window_width: 5
+ * /Estimator/sms_fusion_level: 1
+ * /Estimator/surfDSRange: 0.9
+ * /Estimator/surf_dist_thres: 0.18
+ * /Estimator/tl2b_x: 0
+ * /Estimator/tl2b_y: 0
+ * /Estimator/tl2b_z: 0.28
+ * /IMU/acc_n: 0.00399395708882
+ * /IMU/acc_w: 6.43566593535e-05
+ * /IMU/gravity: 9.80511
+ * /IMU/gyr_n: 0.00156363439497
+ * /IMU/gyr_w: 3.56403186964e-05
+ * /IMU/imu_topic: /imu/data
+ * /baseMeasureFile: /data/users/tasla...
+ * /common/data_set: HK
+ * /common/frame_id: GLIO
+ * /feature_selection/batch_feature_res_num: 25
+ * /feature_selection/batch_rand_set_num: 400
+ * /feature_selection/feature_res_num: 100
+ * /feature_selection/rand_set_num: 300
+ * /feature_selection/random_select: True
+ * /initialization/Euler_p: 0.098
+ * /initialization/Euler_r: 0.6825
+ * /initialization/Euler_y: 60.8
+ * /initialization/anc_ecef_x: -2419233.42
+ * /initialization/anc_ecef_y: 5385473.13
+ * /initialization/anc_ecef_z: 2405341.3
+ * /initialization/lever_arm_x: 0.0
+ * /initialization/lever_arm_y: 0.86
+ * /initialization/lever_arm_z: -0.31
+ * /initialization/station_x_: -2414266.92
+ * /initialization/station_y_: 5386768.987
+ * /initialization/station_z_: 2407460.031
+ * /initialization/timeshift: 18
+ * /initialization/yaw_enu_local: 0
+ * /lidar_odometry/ds_rate: 1
+ * /lidar_odometry/edgeThreshold: 1.0
+ * /lidar_odometry/if_to_deskew: False
+ * /lidar_odometry/lidar_topic: /velodyne_points
+ * /lidar_odometry/line_num: 32
+ * /lidar_odometry/max_num_iter: 12
+ * /lidar_odometry/scan_match_cnt: 1
+ * /lidar_odometry/surfThreshold: 0.1
+ * /mode: 1
+ * /nf: 1
+ * /out_folder: /data/users/tasla...
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /roverMeasureFile: /data/users/tasla...
+ * /soltype: 0
+ * /te_time: 2000000000
+ * /ts_time: 0
+ * /use_sim_time: False
+ * /visualization/GTinLocal: False
+ * /visualization/LCinLocal: False
+ * /visualization/RTKinLocal: True
+
+NODES
+  /
+    Estimator (GLIO/Estimator)
+    GLIO (tf/static_transform_publisher)
+    LidarOdometry (GLIO/LidarOdometry)
+    Preprocessing (GLIO/Preprocessing)
+    gnss_preprocessor_node (global_fusion/gnss_preprocessor_node)
+
+auto-starting new master
+[1mprocess[master]: started with pid [3662135][0m
+[1mROS_MASTER_URI=http://127.0.0.1:11371/[0m
+]2;/data/users/taslab_zxp/projects/GLIO_setup/profiles/calibrated_v2/configs/TC_Surface.launch http://127.0.0.1:11371/
+[1msetting /run_id to e0b775be-d8f3-11f1-a02b-b082e2ac3da4[0m
+[1mprocess[rosout-1]: started with pid [3662146][0m
+started core service [/rosout]
+[1mprocess[GLIO-2]: started with pid [3662149][0m
+[1mprocess[Preprocessing-3]: started with pid [3662150][0m
+[1mprocess[LidarOdometry-4]: started with pid [3662151][0m
+[1mprocess[Estimator-5]: started with pid [3662152][0m
+[1mprocess[gnss_preprocessor_node-6]: started with pid [3662154][0m
+[gnss_preprocessor_node-6] killing on exit
+[LidarOdometry-4terminate called after throwing an instance of 'boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::lock_error> >'
+  what():  boost: mutex lock failed in pthread_mutex_lock: Invalid argument
+[0m[ INFO] [1793867738.800608340]: [1;32m---->[0m Preprocessing Started.[0m
+[0m[ INFO] [1793867738.799832648]: [1;32m---->[0m Lidar Odometry Started.[0m
+] killing on exit
+[Estimator-5] killing on exit
+[Preprocessing-3] killing on exit
+[GLIO-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

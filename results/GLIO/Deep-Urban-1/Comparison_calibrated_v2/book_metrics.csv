@@ -1,0 +1,4 @@
+method,horizontal_rmse_m,position_3d_rmse_m,position_3d_p95_m,position_3d_max_m
+LC,3.59,5.912,8.522,12.225
+TC-Pose,1.82,4.547,7.861,10.254
+TC-Surface,1.622,3.508,5.622,7.927

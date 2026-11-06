@@ -1,0 +1,32 @@
+{
+  "checked_utc": "2026-11-05T13:51:57.570409+00:00",
+  "publication_root": "C:\\UAV_Chapter3\\github_upload\\IET_Chapter_3",
+  "total_published_files": 213,
+  "utf8_text_files_checked_excluding_audit_and_manifest": 193,
+  "cjk_filename_findings": 0,
+  "cjk_text_findings": 0,
+  "pdfs_checked_for_cjk": 6,
+  "numeric_npz_files_checked": 6,
+  "python_files_parsed": 34,
+  "glio_patch_matches_pinned_base": true,
+  "source_bytes_excluding_audit_and_manifest": 7367877,
+  "github_uploaded": false,
+  "datasets_copied": false,
+  "third_party_source": "Fetched at the locked revision outside the upload folder; original local submodule is preserved.",
+  "word_integration": {
+    "document": "Chapter3 3.1 3.2 3.3 3.4.docx",
+    "section": "1.4.6 / 3.4.6",
+    "new_figures": {
+      "3.14": "3D position errors",
+      "3.15": "Horizontal trajectories"
+    },
+    "new_body_paragraphs": 2,
+    "existing_math_objects_preserved": 176,
+    "existing_body_elements_preserved": 240,
+    "prefix_pages_pixel_identical": 21,
+    "final_pages_rendered_and_reviewed": 25,
+    "original_backup_verified": true
+  },
+  "scope": "Names and UTF-8 files have no CJK characters. PDF text, PNG metadata and numeric result archives were checked; chart labels were visually reviewed.",
+  "comparison_groups": "B1-B3 and GLIO have separate protocols and are not one six-method ranking."
+}

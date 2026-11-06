@@ -218,3 +218,23 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Chapter 3: keep raw data and installed software outside this repository
+/data/
+/external/
+/.envs/
+/.conda_cache/
+/datasets/raw/
+/datasets/processed/
+/results/smoke/
+*.bag
+*.bag.active
+*.partial
+
+# Publication exclusions
+/backups/
+/github_upload/
+*.sif
+*.tar.gz
+*.z01
+*.zip

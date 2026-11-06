@@ -1,0 +1,3 @@
+logging to /data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/TC_Surface_20261105_163538/ros_logs/e0b775be-d8f3-11f1-a02b-b082e2ac3da4/rosout.log
+re-publishing aggregated messages to /rosout_agg
+subscribed to /rosout

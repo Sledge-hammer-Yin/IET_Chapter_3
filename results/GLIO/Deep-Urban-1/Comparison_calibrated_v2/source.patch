@@ -1,0 +1,116 @@
+diff --git a/GLIO/include/factors/dd_psr_factor.hpp b/GLIO/include/factors/dd_psr_factor.hpp
+index 41a44bc..fd95aea 100755
+--- a/GLIO/include/factors/dd_psr_factor.hpp
++++ b/GLIO/include/factors/dd_psr_factor.hpp
+@@ -17,8 +17,8 @@ class dd_psr_factor_20: public ceres::SizedCostFunction<psr_size_20-1, 3, 3, 1,
+ public:
+     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
+     dd_psr_factor_20() = delete;
+-    dd_psr_factor_20(const nlosExclusion::GNSS_Raw_Array &_gnss_data, const nlosExclusion::GNSS_Raw_Array &_ref_gnss_data, const Eigen::MatrixXd &_DD_W_matrix,const int &_mPrn, const double &_ratio, const Eigen::Vector3d &_Station_pos, const double &_DDpsrThreshold):
+-    gnss_data(_gnss_data),ref_gnss_data(_ref_gnss_data), DD_W_matrix(_DD_W_matrix),mPrn(_mPrn), ratio(_ratio), Station_pos(_Station_pos), DDpsrThreshold(_DDpsrThreshold)
++    dd_psr_factor_20(const nlosExclusion::GNSS_Raw_Array &_gnss_data, const nlosExclusion::GNSS_Raw_Array &_ref_gnss_data, const Eigen::MatrixXd &_DD_W_matrix,const int &_mPrn, const double &_ratio, const Eigen::Vector3d &_Station_pos, const double &_DDpsrThreshold, const Eigen::Vector3d &_lever_arm_local = Eigen::Vector3d::Zero()):
++    gnss_data(_gnss_data),ref_gnss_data(_ref_gnss_data), DD_W_matrix(_DD_W_matrix),mPrn(_mPrn), ratio(_ratio), Station_pos(_Station_pos), DDpsrThreshold(_DDpsrThreshold), lever_arm_local(_lever_arm_local)
+     {
+         relative_sqrt_info = 10.0;
+     }
+@@ -29,7 +29,7 @@ public:
+ 
+         double yaw_diff = parameters[2][0]; // yaw difference between enu and local
+         Eigen::Vector3d ref_ecef(parameters[3][0], parameters[3][1], parameters[3][2]);
+-        Eigen::Vector3d lever_arm_T = Eigen::Vector3d::Zero();
++        const Eigen::Vector3d lever_arm_T = lever_arm_local;
+         double sin_yaw_diff = std::sin(yaw_diff);
+         double cos_yaw_diff = std::cos(yaw_diff);
+         Eigen::Matrix3d R_enu_local; // rotation of local to enu
+@@ -179,7 +179,7 @@ private:
+     double svdt, svddt, tgd;
+     double pr_uura, dp_uura;
+     double relative_sqrt_info, DDpsrThreshold;
+-    Eigen::Vector3d ecefRefP, Station_pos;
++    Eigen::Vector3d ecefRefP, Station_pos, lever_arm_local;
+     int satSys;
+     const nlosExclusion::GNSS_Raw_Array gnss_data;
+     const nlosExclusion::GNSS_Raw_Array ref_gnss_data;
+diff --git a/GLIO/include/utils/random_generator.hpp b/GLIO/include/utils/random_generator.hpp
+index 1ec0606..5663045 100644
+--- a/GLIO/include/utils/random_generator.hpp
++++ b/GLIO/include/utils/random_generator.hpp
+@@ -14,6 +14,11 @@
+ 
+ namespace common
+ {
++    inline unsigned int experimentSeed()
++    {
++        const char *seed = ::getenv("GLIO_RANDOM_SEED");
++        return seed ? static_cast<unsigned int>(::strtoul(seed, nullptr, 10)) : std::random_device{}();
++    }
+     template < typename T >
+     struct RandomGeneratorFloat
+     {
+@@ -21,7 +26,7 @@ namespace common
+         std::mt19937                       m_random_engine;
+         std::uniform_real_distribution< T > m_dist;
+         std::normal_distribution< T > m_dist_normal;
+-        RandomGeneratorFloat(): m_random_engine( std::random_device{}() )
++        RandomGeneratorFloat(): m_random_engine( experimentSeed() )
+         {};
+         ~RandomGeneratorFloat(){};
+ 
+@@ -55,7 +60,7 @@ namespace common
+         std::random_device                 random_device;
+         std::mt19937                       m_random_engine;
+         std::uniform_int_distribution< T > m_dist;
+-        RandomGeneratorInt(): m_random_engine( std::random_device{}() )
++        RandomGeneratorInt(): m_random_engine( experimentSeed() )
+         {};
+         ~RandomGeneratorInt(){};
+ 
+diff --git a/GLIO/src/Estimator.cpp b/GLIO/src/Estimator.cpp
+index 9e94198..b79bc2e 100644
+--- a/GLIO/src/Estimator.cpp
++++ b/GLIO/src/Estimator.cpp
+@@ -61,6 +61,7 @@
+ #include <pcl/filters/passthrough.h>
+ 
+ #include <random>
++#include <iomanip>
+ 
+ /* tools used for gnss related calculation */
+ using namespace gnss_comm;
+@@ -1906,7 +1907,7 @@ public:
+         int weight_matrix_size = weight_matrix.cols();
+         Eigen::MatrixXd identity_weight_matrix = Eigen::MatrixXd::Identity(weight_matrix_size, weight_matrix_size);
+ 
+-        dd_psr_factor_20 *dd_psr_factor = new dd_psr_factor_20(user_gnss_data, ref_gnss_data, identity_weight_matrix, mPrn, ts_ratio, Station_pos, DDpsrThreshold);
++        dd_psr_factor_20 *dd_psr_factor = new dd_psr_factor_20(user_gnss_data, ref_gnss_data, identity_weight_matrix, mPrn, ts_ratio, Station_pos, DDpsrThreshold, lever_arm_T);
+         auto ID = problem.AddResidualBlock(dd_psr_factor, NULL, gl_tmpTrans[leftKey], gl_tmpTrans[rightKey], para_yaw_enu_local, para_anc_ecef); //new ceres::HuberLoss(1.0)
+ 
+         return true;
+@@ -1968,9 +1969,13 @@ public:
+                     continue;
+                 }
+ 
+-                float gps_x = thisGPS.pose.pose.position.x;
+-                float gps_y = thisGPS.pose.pose.position.y;
+-                float gps_z = thisGPS.pose.pose.position.z;
++                // The PVT solution is at the antenna; graph poses are at the IMU.
++                const PointPoseInfo &imu_pose = pose_info_keyframe->points[proc_kf_idx];
++                const Eigen::Quaterniond imu_rotation(imu_pose.qw, imu_pose.qx, imu_pose.qy, imu_pose.qz);
++                const Eigen::Vector3d antenna_offset = imu_rotation.normalized() * lever_arm_t;
++                float gps_x = thisGPS.pose.pose.position.x - antenna_offset.x();
++                float gps_y = thisGPS.pose.pose.position.y - antenna_offset.y();
++                float gps_z = thisGPS.pose.pose.position.z - antenna_offset.z();
+ 
+                 // Add GPS every a few meters
+                 PointType curGPSPoint;
+@@ -1988,6 +1993,10 @@ public:
+                 gtsam::GPSFactor gps_factor(proc_kf_idx, gtsam::Point3(gps_x, gps_y, gps_z), gps_noise);
+                 local_pose_graph.add(gps_factor);
+ 
++                std::ofstream audit(result_path + "lc_gnss_factors.csv", std::ios::app);
++                audit << std::fixed << std::setprecision(8)
++                      << pose_info_keyframe->points[proc_kf_idx].time << ','
++                      << gps_x << ',' << gps_y << ',' << gps_z << '\n';
+                 GNSSAdded = true;
+                 last_GNSS_add_pos = pose_info_keyframe->points[proc_kf_idx];
+                 break;

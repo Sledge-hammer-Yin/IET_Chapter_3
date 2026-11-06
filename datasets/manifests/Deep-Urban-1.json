@@ -1,0 +1,127 @@
+{
+  "sequence": "Deep-Urban-1",
+  "imu": {
+    "raw_samples": 614782,
+    "rate_hz": 100,
+    "raw_max_gap_s": 0.009376049,
+    "filled_empty_bins": 0,
+    "longest_filled_gap_s": 0.0,
+    "seconds": 1536
+  },
+  "preparation_settings": {
+    "imu_rate_hz": 100,
+    "dgnss_sigma_floor_m": 3.0,
+    "spp_sigma_floor_m": 6.0,
+    "base_ecef_m": [
+      -2414266.92,
+      5386768.987,
+      2407460.031
+    ],
+    "gnss_constellation": "GPS+GLONASS+Galileo+QZSS+BeiDou+NavIC (where available)",
+    "gnss_frontend": "Forward L1 DGNSS, with forward SPP fallback",
+    "rtklib_navsys_mask": 125
+  },
+  "rtklib_sha256": "14c33c89777a54a1a5a064918307369acd149a40db7c29fdc199725283b1d5de",
+  "dgnss_epochs": 541,
+  "spp_fallback_epochs": 412,
+  "missing_gnss_epochs": 584,
+  "reference_epochs": 1539,
+  "reference_quality_counts": {
+    "1": 525,
+    "2": 796,
+    "3": 103,
+    "4": 87,
+    "5": 28
+  },
+  "origin_ecef_m": [
+    -2419231.6014,
+    5385472.3273,
+    2405340.6582
+  ],
+  "config": {
+    "imu_rate_hz": 100,
+    "gravity_mps2": 9.80511,
+    "acc_noise_density": 0.0112,
+    "gyro_noise_density": 0.01027,
+    "acc_bias_random_walk": 0.000118,
+    "gyro_bias_random_walk": 9.14e-05,
+    "dgnss_sigma_floor_m": 3.0,
+    "spp_sigma_floor_m": 6.0,
+    "bootstrap_seconds": 60,
+    "settling_seconds": 30,
+    "nis_probability": 0.999,
+    "fixed_lag_seconds": 5.0,
+    "isam_relinearize_threshold": 0.01,
+    "isam_relinearize_skip": 1,
+    "extra_relinearization_updates": 3,
+    "linear_solver": "QR",
+    "antenna_lever_body_m": [
+      0.0,
+      0.86,
+      -0.31
+    ],
+    "reference_lever_body_m": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "position_prior_sigma_m": 10.0,
+    "velocity_prior_sigma_mps": 5.0,
+    "tilt_prior_sigma_deg": 5.0,
+    "yaw_prior_sigma_deg": 30.0,
+    "acc_bias_prior_sigma": 0.1,
+    "gyro_bias_prior_sigma": 0.01,
+    "gnss_frontend": "Forward L1 DGNSS, with forward SPP fallback",
+    "gnss_constellation": "GPS+GLONASS+Galileo+QZSS+BeiDou+NavIC (where available)",
+    "rtklib_navsys_mask": 125,
+    "base_ecef_m": [
+      -2414266.92,
+      5386768.987,
+      2407460.031
+    ]
+  },
+  "sources": {
+    "imu": {
+      "relative_path": "imu/xsense_imu_deep_urban1.csv",
+      "bytes": 214803817,
+      "mtime_ns": 1793460111498614400,
+      "sha256": "40ade891c52bdc0a262a92eae6d4b1376a5cee7d0b485fb729a51248737228f0"
+    },
+    "reference": {
+      "relative_path": "ground_truth/UrbanNav_whampoa_raw.txt",
+      "bytes": 274298,
+      "mtime_ns": 1793460258587363200,
+      "sha256": "cb35bc9ebfb171147d290672a46b9d7426475501c922d84ae81edde92c3ba272"
+    },
+    "rover": {
+      "relative_path": "gnss/20210521.medium-urban.whampoa.ublox.f9p.obs.txt",
+      "bytes": 5760663,
+      "mtime_ns": 1793460201002803300,
+      "sha256": "484bdafe37a6792ff9b967cba0927a36b322a4e18da05bb3ef8b6635d3fe2163"
+    },
+    "base": {
+      "relative_path": "gnss/hksc1410.21o.txt",
+      "bytes": 20377114,
+      "mtime_ns": 1793460228809892800,
+      "sha256": "cc0b03ed29d781e4ad8c0989da09478dc1c491824aa41dae08326d3a21b330e8"
+    },
+    "nav": {
+      "relative_path": "gnss/hksc141g.nav.txt",
+      "bytes": 139060,
+      "mtime_ns": 1793460242347259200,
+      "sha256": "5c93296f70ef3ce1c37a813c8df064f950b900214185f65bc19a7757948aabfe"
+    },
+    "extrinsic.yaml": {
+      "relative_path": "calibration/extrinsic.yaml",
+      "bytes": 3073,
+      "mtime_ns": 1793460283642580200,
+      "sha256": "76b2e12056bb35b2d829fdbbc56e05f36cf30e1ce98eea3a5e73c7a27d8ec181"
+    },
+    "xsens_imu_param.yaml": {
+      "relative_path": "calibration/xsens_imu_param.yaml",
+      "bytes": 750,
+      "mtime_ns": 1793460294195290700,
+      "sha256": "55da278a30572015d2ab4024ae1dfc11abb1fb54f252498ce318152c6d39ecd5"
+    }
+  }
+}

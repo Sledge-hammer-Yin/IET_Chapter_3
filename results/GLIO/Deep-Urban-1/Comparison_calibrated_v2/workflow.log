@@ -1,0 +1,82 @@
+Frozen data, code, executable, initialization and calibration checks passed
+{
+  "status": "complete",
+  "wait_seconds": 10.029366471047979,
+  "sliding_window_end_utc": 1621580058.9797258,
+  "backend_end_utc": 1621580058.5792928,
+  "tail_gap_seconds": 0.4004330635070801,
+  "policy": "Wait for a stable front-end tail and backend coverage within 4 s; no data or estimator changes."
+}
+Expected output rows: 4598 /data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/LC_20261105_154322/lc_result.csv
+RUN_OUTPUT=/data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/LC_20261105_154322
+{"mode": "LC", "run_dir": "/data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/LC_20261105_154322", "native_rows": 4598, "lc_gnss_factors": 14, "validated": true}
+Frozen data, code, executable, initialization and calibration checks passed
+Frozen data, code, executable, initialization and calibration checks passed
+{
+  "status": "complete",
+  "wait_seconds": 10.021248406963423,
+  "sliding_window_end_utc": 1621580058.9797258,
+  "backend_end_utc": 1621580058.5792928,
+  "tail_gap_seconds": 0.4004330635070801,
+  "policy": "Wait for a stable front-end tail and backend coverage within 4 s; no data or estimator changes."
+}
+Expected output rows: 4598 /data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/TC_Pose_20261105_160929/tc_batch_result.csv
+RUN_OUTPUT=/data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/TC_Pose_20261105_160929
+{"mode": "TC_Pose", "run_dir": "/data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/TC_Pose_20261105_160929", "native_rows": 4598, "lc_gnss_factors": 0, "validated": true}
+Frozen data, code, executable, initialization and calibration checks passed
+Frozen data, code, executable, initialization and calibration checks passed
+{
+  "status": "complete",
+  "wait_seconds": 156.68323858000804,
+  "sliding_window_end_utc": 1621580058.779491,
+  "backend_end_utc": 1621580059.9808307,
+  "tail_gap_seconds": -1.2013397216796875,
+  "policy": "Wait for a stable front-end tail and backend coverage within 4 s; no data or estimator changes."
+}
+Expected output rows: 4601 /data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/TC_Surface_20261105_163538/tc_batch_result.csv
+RUN_OUTPUT=/data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/TC_Surface_20261105_163538
+{"mode": "TC_Surface", "run_dir": "/data/users/taslab_zxp/outputs/GLIO/Deep-Urban-1/Comparison_calibrated_v2/runs/TC_Surface_20261105_163538", "native_rows": 4601, "lc_gnss_factors": 0, "validated": true}
+Frozen data, code, executable, initialization and calibration checks passed
+{
+  "eligible_reference_epochs": 1516,
+  "common_reference_epochs": 1514,
+  "common_coverage_pct": 99.86807387862797,
+  "metrics": [
+    {
+      "method": "LC",
+      "epochs": 1514,
+      "horizontal_rmse_m": 3.5904675246900406,
+      "vertical_rmse_m": 4.696363436602389,
+      "position_3d_rmse_m": 5.911623006798524,
+      "position_3d_mae_m": 5.32996831384801,
+      "position_3d_p95_m": 8.52185448594917,
+      "position_3d_max_m": 12.22485943519349,
+      "relative_displacement_10s_rmse_m": 1.474167385433816,
+      "relative_displacement_10s_pairs": 1504
+    },
+    {
+      "method": "TC-Pose",
+      "epochs": 1514,
+      "horizontal_rmse_m": 1.8200598377696633,
+      "vertical_rmse_m": 4.166346623140255,
+      "position_3d_rmse_m": 4.546543961869755,
+      "position_3d_mae_m": 3.981240931519196,
+      "position_3d_p95_m": 7.8606193415177215,
+      "position_3d_max_m": 10.253638280213883,
+      "relative_displacement_10s_rmse_m": 1.3306299710552214,
+      "relative_displacement_10s_pairs": 1504
+    },
+    {
+      "method": "TC-Surface",
+      "epochs": 1514,
+      "horizontal_rmse_m": 1.6219811916661133,
+      "vertical_rmse_m": 3.1106492925441156,
+      "position_3d_rmse_m": 3.5081279918674335,
+      "position_3d_mae_m": 3.2040486604592773,
+      "position_3d_p95_m": 5.6218308274442705,
+      "position_3d_max_m": 7.92659843679483,
+      "relative_displacement_10s_rmse_m": 1.0981526963203105,
+      "relative_displacement_10s_pairs": 1504
+    }
+  ]
+}

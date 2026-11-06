@@ -1,0 +1,4 @@
+method,end_to_end_wall_s,backend_wait_s,sampled_peak_combined_native_rss_mib,sampled_native_cpu_s
+LC,1567.508827,10.029366,3547.210938,1053.7
+TC-Pose,1568.066863,10.021248,4275.425781,2050.04
+TC-Surface,1713.996742,156.683239,4651.5,2778.06

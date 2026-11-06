@@ -1,0 +1,10 @@
+Bootstrap: localimage
+From: /data/users/taslab_zxp/installers/apptainer/images/glio-melodic.sif
+
+%post
+    set -eu
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update
+    apt-get install -y --no-install-recommends ros-melodic-eigen-conversions
+    apt-get clean
+    rm -rf /var/lib/apt/lists/*

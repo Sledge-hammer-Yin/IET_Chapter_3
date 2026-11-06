@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "wait_seconds": 156.68323858000804,
+  "sliding_window_end_utc": 1621580058.779491,
+  "backend_end_utc": 1621580059.9808307,
+  "tail_gap_seconds": -1.2013397216796875,
+  "policy": "Wait for a stable front-end tail and backend coverage within 4 s; no data or estimator changes."
+}

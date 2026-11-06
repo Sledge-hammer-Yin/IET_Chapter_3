@@ -1,0 +1,14 @@
+{
+  "upstream_url": "https://github.com/XikunLiu-huskit/GLIO.git",
+  "base_commit": "332d19ff641f2ada9d9d75f2a6dab013d6015f76",
+  "patch": "source.patch",
+  "patch_sha256": "138d84bd901db8cd4519af0e577ec75b4f575aa32e09ed836d507139314b01d8",
+  "modes": [
+    "LC",
+    "TC_Pose",
+    "TC_Surface"
+  ],
+  "profile": "calibrated_v2",
+  "trained_weights_required": false,
+  "notice": "Original third-party source is fetched outside the English-only upload tree. Preserve its upstream licenses and notices."
+}

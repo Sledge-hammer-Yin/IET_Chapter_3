@@ -1,0 +1,5 @@
+# Preserve exact publication bytes and recorded SHA256 checksums.
+* -text
+*.npz binary
+*.png binary
+*.pdf binary

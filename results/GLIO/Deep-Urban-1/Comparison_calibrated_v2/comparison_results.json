@@ -1,0 +1,314 @@
+{
+  "profile": "calibrated_v2",
+  "eligible_reference_epochs": 1516,
+  "common_reference_epochs": 1514,
+  "common_coverage_pct": 99.86807387862797,
+  "common_utc_start": 1621578545.0,
+  "common_utc_end": 1621580058.0,
+  "reference_quality_counts": {
+    "1": 500,
+    "2": 796,
+    "3": 103,
+    "4": 87,
+    "5": 28
+  },
+  "metrics": [
+    {
+      "method": "LC",
+      "epochs": 1514,
+      "horizontal_rmse_m": 3.5904675246900406,
+      "vertical_rmse_m": 4.696363436602389,
+      "position_3d_rmse_m": 5.911623006798524,
+      "position_3d_mae_m": 5.32996831384801,
+      "position_3d_p95_m": 8.52185448594917,
+      "position_3d_max_m": 12.22485943519349,
+      "relative_displacement_10s_rmse_m": 1.474167385433816,
+      "relative_displacement_10s_pairs": 1504
+    },
+    {
+      "method": "TC-Pose",
+      "epochs": 1514,
+      "horizontal_rmse_m": 1.8200598377696633,
+      "vertical_rmse_m": 4.166346623140255,
+      "position_3d_rmse_m": 4.546543961869755,
+      "position_3d_mae_m": 3.981240931519196,
+      "position_3d_p95_m": 7.8606193415177215,
+      "position_3d_max_m": 10.253638280213883,
+      "relative_displacement_10s_rmse_m": 1.3306299710552214,
+      "relative_displacement_10s_pairs": 1504
+    },
+    {
+      "method": "TC-Surface",
+      "epochs": 1514,
+      "horizontal_rmse_m": 1.6219811916661133,
+      "vertical_rmse_m": 3.1106492925441156,
+      "position_3d_rmse_m": 3.5081279918674335,
+      "position_3d_mae_m": 3.2040486604592773,
+      "position_3d_p95_m": 5.6218308274442705,
+      "position_3d_max_m": 7.92659843679483,
+      "relative_displacement_10s_rmse_m": 1.0981526963203105,
+      "relative_displacement_10s_pairs": 1504
+    }
+  ],
+  "coverage": [
+    {
+      "method": "LC",
+      "native_rows": 4598,
+      "native_start_utc": 1621578524.266535,
+      "native_end_utc": 1621580058.5792928,
+      "eligible_reference_epochs": 1516,
+      "valid_reference_epochs": 1514,
+      "coverage_pct": 99.86807387862797,
+      "accepted_lc_gnss_factors": 14
+    },
+    {
+      "method": "TC-Pose",
+      "native_rows": 4598,
+      "native_start_utc": 1621578524.266535,
+      "native_end_utc": 1621580058.5792928,
+      "eligible_reference_epochs": 1516,
+      "valid_reference_epochs": 1514,
+      "coverage_pct": 99.86807387862797,
+      "accepted_lc_gnss_factors": "not applicable"
+    },
+    {
+      "method": "TC-Surface",
+      "native_rows": 4601,
+      "native_start_utc": 1621578524.266535,
+      "native_end_utc": 1621580059.9808307,
+      "eligible_reference_epochs": 1516,
+      "valid_reference_epochs": 1515,
+      "coverage_pct": 99.93403693931398,
+      "accepted_lc_gnss_factors": "not applicable"
+    }
+  ],
+  "resources": [
+    {
+      "method": "LC",
+      "end_to_end_wall_s": 1567.508826971054,
+      "backend_wait_s": 10.029366471047979,
+      "sampled_peak_combined_native_rss_mib": 3547.2109375,
+      "sampled_native_cpu_s": 1053.7
+    },
+    {
+      "method": "TC-Pose",
+      "end_to_end_wall_s": 1568.0668630599976,
+      "backend_wait_s": 10.021248406963423,
+      "sampled_peak_combined_native_rss_mib": 4275.42578125,
+      "sampled_native_cpu_s": 2050.04
+    },
+    {
+      "method": "TC-Surface",
+      "end_to_end_wall_s": 1713.9967422485352,
+      "backend_wait_s": 156.68323858000804,
+      "sampled_peak_combined_native_rss_mib": 4651.5,
+      "sampled_native_cpu_s": 2778.0599999999995
+    }
+  ],
+  "reference_quality_metrics": [
+    {
+      "method": "LC",
+      "reference_quality_code": 1,
+      "epochs": 500,
+      "horizontal_rmse_m": 2.5318776453128264,
+      "vertical_rmse_m": 4.772814022775307,
+      "position_3d_rmse_m": 5.402791695673214,
+      "position_3d_mae_m": 4.62768552063538,
+      "position_3d_p95_m": 8.989165251174605,
+      "position_3d_max_m": 12.22485943519349,
+      "relative_displacement_10s_rmse_m": 1.5096002503464416,
+      "relative_displacement_10s_pairs": 414
+    },
+    {
+      "method": "LC",
+      "reference_quality_code": 2,
+      "epochs": 796,
+      "horizontal_rmse_m": 3.9145162481163105,
+      "vertical_rmse_m": 4.4077901902098064,
+      "position_3d_rmse_m": 5.89508709161081,
+      "position_3d_mae_m": 5.381011515856596,
+      "position_3d_p95_m": 8.444271213210124,
+      "position_3d_max_m": 11.930905581047277,
+      "relative_displacement_10s_rmse_m": 1.6132791094961323,
+      "relative_displacement_10s_pairs": 657
+    },
+    {
+      "method": "LC",
+      "reference_quality_code": 3,
+      "epochs": 103,
+      "horizontal_rmse_m": 4.320959758360351,
+      "vertical_rmse_m": 4.354635198705675,
+      "position_3d_rmse_m": 6.134618239725758,
+      "position_3d_mae_m": 5.82809098595348,
+      "position_3d_p95_m": 8.29558049544287,
+      "position_3d_max_m": 8.739560136201746,
+      "relative_displacement_10s_rmse_m": 0.9796701422484644,
+      "relative_displacement_10s_pairs": 26
+    },
+    {
+      "method": "LC",
+      "reference_quality_code": 4,
+      "epochs": 87,
+      "horizontal_rmse_m": 4.504655054941795,
+      "vertical_rmse_m": 5.944103826706179,
+      "position_3d_rmse_m": 7.458169176592584,
+      "position_3d_mae_m": 7.34973720239733,
+      "position_3d_p95_m": 8.717550555214759,
+      "position_3d_max_m": 8.763433592292408,
+      "relative_displacement_10s_rmse_m": 0.19899330064831117,
+      "relative_displacement_10s_pairs": 42
+    },
+    {
+      "method": "LC",
+      "reference_quality_code": 5,
+      "epochs": 28,
+      "horizontal_rmse_m": 3.902972082331746,
+      "vertical_rmse_m": 7.344537562624912,
+      "position_3d_rmse_m": 8.317176388911642,
+      "position_3d_mae_m": 8.311556859448977,
+      "position_3d_p95_m": 8.638050269537526,
+      "position_3d_max_m": 8.678858912783378,
+      "relative_displacement_10s_rmse_m": 0.26988208598180824,
+      "relative_displacement_10s_pairs": 2
+    },
+    {
+      "method": "TC-Pose",
+      "reference_quality_code": 1,
+      "epochs": 500,
+      "horizontal_rmse_m": 1.1306012426982914,
+      "vertical_rmse_m": 3.6451570036761765,
+      "position_3d_rmse_m": 3.8164680990990085,
+      "position_3d_mae_m": 3.4220581739394738,
+      "position_3d_p95_m": 5.443438182705876,
+      "position_3d_max_m": 9.157991908493255,
+      "relative_displacement_10s_rmse_m": 1.337917025172405,
+      "relative_displacement_10s_pairs": 414
+    },
+    {
+      "method": "TC-Pose",
+      "reference_quality_code": 2,
+      "epochs": 796,
+      "horizontal_rmse_m": 2.0045911641072895,
+      "vertical_rmse_m": 4.586591884421277,
+      "position_3d_rmse_m": 5.005518040068993,
+      "position_3d_mae_m": 4.313512551972964,
+      "position_3d_p95_m": 8.442783209758083,
+      "position_3d_max_m": 10.253638280213883,
+      "relative_displacement_10s_rmse_m": 1.4144964922764351,
+      "relative_displacement_10s_pairs": 657
+    },
+    {
+      "method": "TC-Pose",
+      "reference_quality_code": 3,
+      "epochs": 103,
+      "horizontal_rmse_m": 2.1808820866006555,
+      "vertical_rmse_m": 3.374644409384386,
+      "position_3d_rmse_m": 4.018018363004942,
+      "position_3d_mae_m": 3.6092799908155078,
+      "position_3d_p95_m": 5.225911366695005,
+      "position_3d_max_m": 7.217448886171925,
+      "relative_displacement_10s_rmse_m": 0.8872552421264729,
+      "relative_displacement_10s_pairs": 26
+    },
+    {
+      "method": "TC-Pose",
+      "reference_quality_code": 4,
+      "epochs": 87,
+      "horizontal_rmse_m": 2.5087666570958045,
+      "vertical_rmse_m": 4.1499344571431935,
+      "position_3d_rmse_m": 4.8493160485103495,
+      "position_3d_mae_m": 4.775261930561358,
+      "position_3d_p95_m": 5.295876573045261,
+      "position_3d_max_m": 5.31189821017824,
+      "relative_displacement_10s_rmse_m": 0.4340440904212058,
+      "relative_displacement_10s_pairs": 42
+    },
+    {
+      "method": "TC-Pose",
+      "reference_quality_code": 5,
+      "epochs": 28,
+      "horizontal_rmse_m": 2.2366680336463327,
+      "vertical_rmse_m": 2.806176717924554,
+      "position_3d_rmse_m": 3.588497131802835,
+      "position_3d_mae_m": 3.4217880345361396,
+      "position_3d_p95_m": 5.237481561924195,
+      "position_3d_max_m": 5.263171927097588,
+      "relative_displacement_10s_rmse_m": 1.9787654879697563,
+      "relative_displacement_10s_pairs": 2
+    },
+    {
+      "method": "TC-Surface",
+      "reference_quality_code": 1,
+      "epochs": 500,
+      "horizontal_rmse_m": 0.9825101050482931,
+      "vertical_rmse_m": 2.9637292102252024,
+      "position_3d_rmse_m": 3.1223415793381912,
+      "position_3d_mae_m": 2.895949507186179,
+      "position_3d_p95_m": 4.775827450499316,
+      "position_3d_max_m": 6.161516531474739,
+      "relative_displacement_10s_rmse_m": 1.061726353914397,
+      "relative_displacement_10s_pairs": 414
+    },
+    {
+      "method": "TC-Surface",
+      "reference_quality_code": 2,
+      "epochs": 796,
+      "horizontal_rmse_m": 1.7090857747219417,
+      "vertical_rmse_m": 3.2643726993056505,
+      "position_3d_rmse_m": 3.684712106166363,
+      "position_3d_mae_m": 3.3279668520047427,
+      "position_3d_p95_m": 5.846031051121326,
+      "position_3d_max_m": 7.92659843679483,
+      "relative_displacement_10s_rmse_m": 1.1936485921425182,
+      "relative_displacement_10s_pairs": 657
+    },
+    {
+      "method": "TC-Surface",
+      "reference_quality_code": 3,
+      "epochs": 103,
+      "horizontal_rmse_m": 1.9459132751248782,
+      "vertical_rmse_m": 2.384019069062809,
+      "position_3d_rmse_m": 3.077356884724671,
+      "position_3d_mae_m": 2.767187266308211,
+      "position_3d_p95_m": 4.667019504466791,
+      "position_3d_max_m": 6.635791330757868,
+      "relative_displacement_10s_rmse_m": 0.7063456644554852,
+      "relative_displacement_10s_pairs": 26
+    },
+    {
+      "method": "TC-Surface",
+      "reference_quality_code": 4,
+      "epochs": 87,
+      "horizontal_rmse_m": 2.6396070037952177,
+      "vertical_rmse_m": 3.2599057719092692,
+      "position_3d_rmse_m": 4.194581120471045,
+      "position_3d_mae_m": 4.131016095346138,
+      "position_3d_p95_m": 4.900248195521388,
+      "position_3d_max_m": 4.9212919000620134,
+      "relative_displacement_10s_rmse_m": 0.39297182294037997,
+      "relative_displacement_10s_pairs": 42
+    },
+    {
+      "method": "TC-Surface",
+      "reference_quality_code": 5,
+      "epochs": 28,
+      "horizontal_rmse_m": 2.529223671297773,
+      "vertical_rmse_m": 3.0798724409758615,
+      "position_3d_rmse_m": 3.9852963041831155,
+      "position_3d_mae_m": 3.909807693629304,
+      "position_3d_p95_m": 4.888611317480082,
+      "position_3d_max_m": 4.899151828986829,
+      "relative_displacement_10s_rmse_m": 1.633538421658345,
+      "relative_displacement_10s_pairs": 2
+    }
+  ],
+  "evaluation_point": "SPAN-CPT; transfer uses each method estimated attitude and [0,0,0.14] m, never reference attitude",
+  "alignment": "No fitted rotation, translation, scale, or time shift",
+  "trial_count_per_mode": 1,
+  "reference_quality_codes_interpreted_as_accuracy_bounds": false,
+  "gnss_frontend_position_sha256": {
+    "LC": "67656297b7d0b8d19ef5e6b18c3153b195ef2c81caefeab5bcb27ffa32ad38ec",
+    "TC_Pose": "67656297b7d0b8d19ef5e6b18c3153b195ef2c81caefeab5bcb27ffa32ad38ec",
+    "TC_Surface": "67656297b7d0b8d19ef5e6b18c3153b195ef2c81caefeab5bcb27ffa32ad38ec"
+  }
+}

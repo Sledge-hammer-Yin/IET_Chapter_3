@@ -1,0 +1,38 @@
+[
+  {
+    "file": "rnx2rtkp.exe",
+    "url": "https://raw.githubusercontent.com/tomojitakasu/RTKLIB_bin/rtklib_2.4.3/bin/rnx2rtkp.exe",
+    "sha256": "14c33c89777a54a1a5a064918307369acd149a40db7c29fdc199725283b1d5de",
+    "bytes": 1365590
+  },
+  {
+    "file": "libgcc_s_seh-1.dll",
+    "url": "https://raw.githubusercontent.com/tomojitakasu/RTKLIB_bin/rtklib_2.4.3/bin/libgcc_s_seh-1.dll",
+    "sha256": "621b30e0febd769e24b5b78c2ce77011595e8b9d7c2b4f05bfed75b2a1f53d7a",
+    "bytes": 82432
+  },
+  {
+    "file": "libgfortran-3.dll",
+    "url": "https://raw.githubusercontent.com/tomojitakasu/RTKLIB_bin/rtklib_2.4.3/bin/libgfortran-3.dll",
+    "sha256": "b1abd767efd9f1bd3ab1a5d3bba3f9f332a051680c3a72cf45d475765e401a5b",
+    "bytes": 1279488
+  },
+  {
+    "file": "libquadmath-0.dll",
+    "url": "https://raw.githubusercontent.com/tomojitakasu/RTKLIB_bin/rtklib_2.4.3/bin/libquadmath-0.dll",
+    "sha256": "de6c30fcc5bc94120647ab0a382fd9dd8b2d1c031b1e629ddb8f54d36d575558",
+    "bytes": 331776
+  },
+  {
+    "file": "libopenblas.dll",
+    "url": "https://raw.githubusercontent.com/tomojitakasu/RTKLIB_bin/rtklib_2.4.3/bin/libopenblas.dll",
+    "sha256": "7ce8bd02b8218a4156a09456607c4b2f9a1ac4318c65755f2e435e68d93e74b2",
+    "bytes": 38340126
+  },
+  {
+    "file": "LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/tomojitakasu/RTKLIB_bin/rtklib_2.4.3/bin/LICENSE.txt",
+    "sha256": "1676bcf2d282e371a75de7cfba089b335936a234390b57ebd6fbab7cb3b25ece",
+    "bytes": 2861
+  }
+]

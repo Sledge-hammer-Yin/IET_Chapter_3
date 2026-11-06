@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<launch>
+    
+    
+    <arg name="result_dir" /><param name="/use_sim_time" value="false" />
+
+    
+    <rosparam file="/data/users/taslab_zxp/projects/GLIO_setup/profiles/calibrated_v2/configs/LC.yaml" />
+    
+    <node pkg="tf" type="static_transform_publisher" name="GLIO" args="0 0 0 0 0 0 base_link GLIO 50" />
+
+    
+    <node pkg="GLIO" type="Preprocessing" name="Preprocessing" output="screen" required="true" />
+    <node pkg="GLIO" type="LidarOdometry" name="LidarOdometry" output="screen" required="true" />
+    <node pkg="GLIO" type="Estimator" name="Estimator" output="screen" required="true">
+    <param name="result_path" type="string" value="$(arg result_dir)/" />
+    </node>
+
+    
+    
+    <param name="mode" type="int" value="1" />
+    
+    <param name="nf" type="int" value="1" />
+    <param name="soltype" type="int" value="0" />
+    <param name="ts_time" type="int" value="0" />
+    <param name="te_time" type="int" value="2000000000" />
+
+    
+    <param name="roverMeasureFile" type="string" value="/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/gnss/20210521.medium-urban.whampoa.ublox.f9p.obs" />
+    <param name="baseMeasureFile" type="string" value="/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/gnss/hksc1410.21o" />
+    <param name="EmpFile" type="string" value="/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/gnss/hksc141g.nav" />
+    <param name="out_folder" type="string" value="$(arg result_dir)/rtklibResult.pos" />
+
+
+
+
+
+
+    <node name="gnss_preprocessor_node" pkg="global_fusion" type="gnss_preprocessor_node" output="screen" required="true" />
+
+</launch>
