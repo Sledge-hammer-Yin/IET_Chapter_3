@@ -238,3 +238,10 @@ __marimo__/
 *.tar.gz
 *.z01
 *.zip
+
+# Section 3.5 local assets
+/algorithms/LearningAid/external/
+/models/
+/results/LearningAid/replot_*/
+*.pt
+*.pth

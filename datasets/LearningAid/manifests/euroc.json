@@ -1,0 +1,73 @@
+{
+  "sequences": {
+    "MH_01_easy": {
+      "imu_samples": 36381,
+      "duration_s": 181.9,
+      "reference_sha256": "aae2d7c5684724c8afe364d2fd8499a6ed77a9169adf03736531f67d8e7b2117",
+      "reference_path": "/data/users/taslab_zxp/datasets/EuRoC/MH_01_easy/mav0/state_groundtruth_estimate0/data.csv"
+    },
+    "MH_05_difficult": {
+      "imu_samples": 22212,
+      "duration_s": 111.05500006400001,
+      "reference_sha256": "da13e5dcb3d5fc2f12c4e8bfae10dd380d765150be3312f989b0bc5550965451",
+      "reference_path": "/data/users/taslab_zxp/datasets/EuRoC/MH_05_difficult/mav0/state_groundtruth_estimate0/data.csv"
+    },
+    "V1_02_medium": {
+      "imu_samples": 16701,
+      "duration_s": 83.5,
+      "reference_sha256": "fed415eee44313584b9c4f61010dac146d5e4a4a35301db25b1ecd7d4d91b5f0",
+      "reference_path": "/data/users/taslab_zxp/datasets/EuRoC/V1_02_medium/mav0/state_groundtruth_estimate0/data.csv"
+    },
+    "V2_01_easy": {
+      "imu_samples": 22401,
+      "duration_s": 112.0,
+      "reference_sha256": "315807fd7d91868ed6085a3d8fde40315842135f13199ed83e2e6270eb5b5126",
+      "reference_path": "/data/users/taslab_zxp/datasets/EuRoC/V2_01_easy/mav0/state_groundtruth_estimate0/data.csv"
+    },
+    "V2_03_difficult": {
+      "imu_samples": 22970,
+      "duration_s": 114.84499993600001,
+      "reference_sha256": "2c273cf35909c4ca7786137cf63f04cf292ca13da48c406c72b8e96a2b1372e5",
+      "reference_path": "/data/users/taslab_zxp/datasets/EuRoC/V2_03_difficult/mav0/state_groundtruth_estimate0/data.csv"
+    },
+    "MH_03_medium": {
+      "imu_samples": 26302,
+      "duration_s": 131.50499993600002,
+      "reference_sha256": "7e52fd28088b0d428509cc365fbb44ed5d910e5174ac155e1d987923c056000f",
+      "reference_path": "/data/users/taslab_zxp/datasets/EuRoC/MH_03_medium/mav0/state_groundtruth_estimate0/data.csv"
+    },
+    "MH_02_easy": {
+      "imu_samples": 29992,
+      "duration_s": 149.954999808,
+      "reference_sha256": "f49666ad4991c80bc467fc05e6d250cec7e28fbd05c1643402298e67438f754f",
+      "reference_path": "/data/users/taslab_zxp/datasets/EuRoC/MH_02_easy/mav0/state_groundtruth_estimate0/data.csv"
+    },
+    "MH_04_difficult": {
+      "imu_samples": 19753,
+      "duration_s": 98.76,
+      "reference_sha256": "c13de3d5ba9ead60688505d4773286c290fa642264943c88aa182d0eac9f4960",
+      "reference_path": "/data/users/taslab_zxp/datasets/EuRoC/MH_04_difficult/mav0/state_groundtruth_estimate0/data.csv"
+    },
+    "V1_01_easy": {
+      "imu_samples": 28941,
+      "duration_s": 144.70000000000002,
+      "reference_sha256": "16543952bf69f3fb886008a26cc21d3c552deca8fa06087f0bc329c09d7fcbe3",
+      "reference_path": "/data/users/taslab_zxp/datasets/EuRoC/V1_01_easy/mav0/state_groundtruth_estimate0/data_openvins.csv"
+    },
+    "V1_03_difficult": {
+      "imu_samples": 20932,
+      "duration_s": 104.655000064,
+      "reference_sha256": "703ba51a854daba80f20df93e76605c2278b3f227afe2bcbe9eb4255186fc3d9",
+      "reference_path": "/data/users/taslab_zxp/datasets/EuRoC/V1_03_difficult/mav0/state_groundtruth_estimate0/data.csv"
+    },
+    "V2_02_medium": {
+      "imu_samples": 23091,
+      "duration_s": 115.449999872,
+      "reference_sha256": "019ec178d0d2636dca66808f6422ae835b24f14184c54823b3a4a47bf187be2d",
+      "reference_path": "/data/users/taslab_zxp/datasets/EuRoC/V2_02_medium/mav0/state_groundtruth_estimate0/data.csv"
+    }
+  },
+  "source": "https://github.com/Air-IO/Air-IO/releases/tag/datasets",
+  "timestamps": "int64 nanoseconds; relative float64 seconds",
+  "reference_feedback": "Initialization only during test inference"
+}

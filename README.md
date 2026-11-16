@@ -1,11 +1,11 @@
 # UAV positioning experiments for Chapter 3
 
-This project contains the conventional positioning examples for Section 3.4.
+This project contains positioning experiments for Sections 3.4 and 3.5.
 B1 to B3 compare GNSS/IMU estimators on two UrbanNav ground-vehicle sequences.
 LC, TC-Pose and TC-Surface compare three GLIO-based configurations on Deep-Urban-1.
 Each group has its own shared inputs, initialization and evaluation protocol.
 Do not combine the two groups into one six-method accuracy ranking.
-These experiments do not validate UAV flight performance. No trained weights are required.
+These experiments do not validate UAV flight performance. The Section 3.4 methods require no trained weights.
 
 | Method | Main idea | Chapter section | Results |
 |---|---|---|---|
@@ -18,7 +18,7 @@ These experiments do not validate UAV flight performance. No trained weights are
 
 Book section numbers are used here. Some Word drafts display 1.4 instead of 3.4.
 See [the section index](chapters/README.md) for current and planned sections.
-Folders for 3.5 and 3.6 are reserved; no implementations or results are claimed there.
+Section 3.5 contains learning-aided experiments. Section 3.6 remains reserved.
 
 ## Run B1 to B3
 
@@ -77,6 +77,17 @@ GLIO runs on the existing Ubuntu/ROS server. Read
 [the common-epoch report](results/GLIO/Deep-Urban-1/Comparison_calibrated_v2/COMPARISON_REPORT.md).
 Full Linux workspace and setup archives are private local backups; they are not
 part of this upload tree and cannot be executed as Windows binaries.
+
+## Learning-aided positioning
+
+Section 3.5 adds separate GNSS, UWB/inertial and inertial-odometry comparisons.
+Read [the Section 3.5 guide](chapters/section_3_5/README.md) for data, setup,
+validation and run commands. [Saved results](results/LearningAid/20261107_cpu_v1/README.md)
+include English tables and three Times New Roman figures. The inertial comparison
+includes its fixed-position control and negative absolute-error result.
+Validate saved outputs with `python scripts/LearningAid/run.py validate`.
+Raw datasets and installed environments are not uploaded. Recorded model weights
+are provided as assets of the Section 3.5 release in this repository.
 
 ## Files
 

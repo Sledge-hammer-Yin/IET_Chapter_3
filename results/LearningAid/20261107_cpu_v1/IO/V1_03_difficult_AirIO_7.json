@@ -1,0 +1,18 @@
+{
+  "sequence": "V1_03_difficult",
+  "method": "AirIO",
+  "seed": 7,
+  "samples": 997,
+  "duration_s": 99.59999999999965,
+  "rmse_3d_m": 5.464560955093495,
+  "rmse_horizontal_m": 3.8062395494205283,
+  "mae_3d_m": 5.27070047158419,
+  "p95_3d_m": 7.176843906975694,
+  "max_3d_m": 7.487052495028028,
+  "rpe_10s_m": 2.3436057105405355,
+  "final_drift_m": 4.684265071873684,
+  "wall_s": 3.3057014060323127,
+  "updates": 499.0,
+  "accepted_updates": 499.0,
+  "output_availability_pct": 100.0
+}

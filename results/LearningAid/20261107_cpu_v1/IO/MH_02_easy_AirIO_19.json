@@ -1,0 +1,18 @@
+{
+  "sequence": "MH_02_easy",
+  "method": "AirIO",
+  "seed": 19,
+  "samples": 1450,
+  "duration_s": 144.8999999999995,
+  "rmse_3d_m": 7.598285116651493,
+  "rmse_horizontal_m": 4.254770234555259,
+  "mae_3d_m": 6.936039311869259,
+  "p95_3d_m": 13.196556736686818,
+  "max_3d_m": 14.316465839003005,
+  "rpe_10s_m": 3.353538125281222,
+  "final_drift_m": 14.168991322740705,
+  "wall_s": 4.541397957014851,
+  "updates": 725.0,
+  "accepted_updates": 725.0,
+  "output_availability_pct": 100.0
+}

@@ -1,0 +1,15 @@
+{
+  "train": {
+    "const1-trial1-tdoa2": 8393,
+    "const1-trial2-tdoa2": 7260,
+    "const1-trial3-tdoa2": 7321,
+    "const2-trial1-tdoa2": 7354,
+    "const2-trial2-tdoa2": 7307,
+    "const2-trial3-tdoa2": 7669
+  },
+  "validation": {
+    "const3-trial1-tdoa2": 7534,
+    "const3-trial2-tdoa2": 7237,
+    "const3-trial3-tdoa2": 7135
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "candidate_epochs": 209,
+  "cached_epochs": 209,
+  "failures": [],
+  "reference_quality_counts": {
+    "1.0": 114,
+    "2.0": 83,
+    "3.0": 5,
+    "4.0": 7
+  }
+}

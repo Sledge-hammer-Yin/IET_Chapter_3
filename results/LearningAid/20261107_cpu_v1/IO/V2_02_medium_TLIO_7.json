@@ -1,0 +1,18 @@
+{
+  "sequence": "V2_02_medium",
+  "method": "TLIO",
+  "seed": 7,
+  "samples": 1105,
+  "duration_s": 110.39999999999961,
+  "rmse_3d_m": 3.6811861561618557,
+  "rmse_horizontal_m": 3.6193842935923204,
+  "mae_3d_m": 3.2345000406701785,
+  "p95_3d_m": 6.903002976375561,
+  "max_3d_m": 7.753696838891027,
+  "rpe_10s_m": 3.3057276928339965,
+  "final_drift_m": 5.20625599071399,
+  "wall_s": 4.845210618048441,
+  "updates": 572.0,
+  "accepted_updates": "",
+  "output_availability_pct": 100.0
+}

@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "methods": [
+    "IMU",
+    "TLIO",
+    "AirIO"
+  ],
+  "seeds": [
+    7,
+    19,
+    42
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "scope": "Single epoch, RINEX decoded in memory; uncached satellite/atmosphere preprocessing, initial WLS, feature construction, learned inference and correction solver; excludes disk input, network loading and plotting",
+  "warmup_epochs": 2,
+  "sample_policy": "40 uniformly spaced candidate test epochs, no reference-error screening",
+  "maximum_error_norm_difference_from_saved_result_m": 1.1901590823981678e-13
+}

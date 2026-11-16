@@ -1,0 +1,42 @@
+{
+  "run_id": "20261107_cpu_v1",
+  "purpose": "Chapter 3.5 controlled educational experiments; not a reproduction of published headline scores",
+  "resources": {"device": "cpu", "threads": 2, "nice": 19, "loader_workers": 0, "gpu_use": false},
+  "seeds": [7, 19, 42],
+  "gnss": {
+    "train": ["0610_KLT1_203", "0610_KLT2_209"],
+    "validation": ["0610_KLT3_404"],
+    "test": ["UrbanNav-Deep-Urban-1"],
+    "methods": ["WLS", "TDL-W", "TDL-B", "TDL-BW"],
+    "epochs": 120, "patience": 25, "batch_size": 64, "learning_rate": 0.001,
+    "network": "Upstream HybridShareSysNet; mask unused output for each ablation",
+    "solver": "Batched four-step float64 Gauss-Newton with upstream TASGNSS cached satellite and atmospheric corrections",
+    "reference": "SPAN to body to antenna using supplied lever arms and upstream attitude convention",
+    "test_policy": "All finite reference-covered epochs with an available common GNSS frontend solution; no reference-error rejection; report frontend coverage",
+    "alignment": "None"
+  },
+  "uwb": {
+    "train": ["const1", "const2"], "validation": ["const3"], "test": ["const4"],
+    "protocol": "TDOA2; const1-3: trial1-3 complete recordings; const4: trial1-3, all three complete trajectories (nine test recordings)",
+    "methods": ["ESKF", "Huber-ESKF", "NN-ESKF", "NN-Huber-ESKF"],
+    "epochs": 100, "patience": 15, "batch_size": 512, "learning_rate": 0.001,
+    "network": "Geometry-conditioned 10-64-64-1 MLP inspired by Zhao et al.; retrained on UTIL",
+    "features": "Two anchor-to-tag vectors in body coordinates plus their azimuths and elevations; reference pose for training labels only; predicted ESKF pose at inference",
+    "backend": "Upstream UTIL ESKF; retained 5-sigma gate; Huber threshold 1.345; same initialization and 8-fold per-pair sensor decimation for all variants; signed NN correction clipped to +/-2 m",
+    "alignment": "None"
+  },
+  "io": {
+    "train": ["MH_01_easy", "MH_05_difficult", "V1_02_medium", "V2_01_easy", "V2_03_difficult"],
+    "validation": ["MH_03_medium"],
+    "test": ["MH_02_easy", "MH_04_difficult", "V1_01_easy", "V1_03_difficult", "V2_02_medium"],
+    "methods": ["IMU", "TLIO", "AirIO"],
+    "epochs": 40, "patience": 10, "batch_size": 32, "learning_rate": 0.001,
+    "tlio": "Upstream ResNet1D [2,2,2,2], 200-sample window; 200-sample training stride; upstream stochastic-cloning EKF at 5 Hz",
+    "airio": "Upstream CodeNetMotionwithRot, 1000-sample window and stride; causal endpoint velocity and covariance; conventional 15-state ESKF, not AirIMU",
+    "initialization": "One reference position, velocity, attitude and bias state per sequence, shared by all methods; no later reference feedback",
+    "attitude_at_inference": "Estimated from IMU and filter state; no continuous reference attitude",
+    "reference_version": "Author IMU-only EuRoC release; V1_01 corrected OpenVINS reference where supplied separately",
+    "alignment": "None; relative displacement error also reported"
+  },
+  "figures": {"font": "Times New Roman", "width_in": 4.65, "font_pt": 10, "legend_pt": 9, "line_width": 1.4, "dpi": 400, "layout": "one axes per figure, no subfigures", "formats": ["png", "pdf"]}
+}

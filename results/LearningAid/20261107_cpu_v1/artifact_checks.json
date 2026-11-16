@@ -1,0 +1,15 @@
+{
+  "rows": {
+    "GNSS": 10,
+    "UWB": 72,
+    "IO": 40
+  },
+  "figures": 3,
+  "axes_per_figure": 1,
+  "font": "Times New Roman",
+  "all_saved_trajectories_finite": true,
+  "metric_checks": "identity, exact 10 s interval, GNSS upstream parity, UWB upstream parity and Jacobian, velocity-update Jacobian",
+  "trajectory_alignment": "none",
+  "seed_statistic": "arithmetic mean and sample standard deviation of independently trained seed metrics",
+  "pooling": "epochs pooled within each seed across complete test sequences; no cross-group ranking"
+}

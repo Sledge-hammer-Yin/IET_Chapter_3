@@ -1,0 +1,18 @@
+{
+  "sequence": "MH_04_difficult",
+  "method": "IMU",
+  "seed": 0,
+  "samples": 938,
+  "duration_s": 93.69999999999966,
+  "rmse_3d_m": 122.9563945341548,
+  "rmse_horizontal_m": 122.91863102988182,
+  "mae_3d_m": 88.00832162753639,
+  "p95_3d_m": 249.4247999786715,
+  "max_3d_m": 272.4349227486442,
+  "rpe_10s_m": 34.86986850851803,
+  "final_drift_m": 272.4349227486442,
+  "wall_s": 0.32868076500017196,
+  "updates": 0.0,
+  "accepted_updates": 0.0,
+  "output_availability_pct": 100.0
+}

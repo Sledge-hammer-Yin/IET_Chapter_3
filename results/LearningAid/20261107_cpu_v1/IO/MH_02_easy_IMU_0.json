@@ -1,0 +1,18 @@
+{
+  "sequence": "MH_02_easy",
+  "method": "IMU",
+  "seed": 0,
+  "samples": 1450,
+  "duration_s": 144.8999999999995,
+  "rmse_3d_m": 321.0426132511409,
+  "rmse_horizontal_m": 320.96521553595375,
+  "mae_3d_m": 218.56114742307417,
+  "p95_3d_m": 683.143877242435,
+  "max_3d_m": 760.2075421316619,
+  "rpe_10s_m": 65.7314870029545,
+  "final_drift_m": 760.2075421316619,
+  "wall_s": 8.84579076996306,
+  "updates": 0.0,
+  "accepted_updates": 0.0,
+  "output_availability_pct": 100.0
+}

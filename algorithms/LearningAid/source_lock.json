@@ -1,0 +1,127 @@
+{
+  "run_id": "20261107_cpu_v1",
+  "history": "The source fetcher uses shallow fixed-commit checkouts. The private archive preserves the server history and build files.",
+  "repositories": [
+    {
+      "name": "AirIMU",
+      "commit": "119fe7ce229e321b3890282909a183aefad61dfb",
+      "url": "https://github.com/haleqiu/AirIMU.git",
+      "runtime_required": false,
+      "files": {}
+    },
+    {
+      "name": "AirIO",
+      "commit": "7214e8a6ddee95ca07a64f01f1fa3e2f8f60df73",
+      "url": "https://github.com/Air-IO/Air-IO.git",
+      "runtime_required": true,
+      "files": {
+        "model/__init__.py": "696c1163fb8416a1dcb5a17696d838c902d952625b06f960cd8081bea9c7ef21",
+        "model/code.py": "b46df79475ec037ac5fade4dea67aa5dcbc9d29e88a833d08e5474871fad5f3e",
+        "model/loss_func.py": "9a7835b39d0c354d5af862f64e465a12b46e2483c696ea0d80a9a7390aecdbae",
+        "model/losses.py": "02cc86a2eb90cde411bfe399d96fb4458951d066bf30d121e83d5f956076040f"
+      }
+    },
+    {
+      "name": "KLT",
+      "commit": "83fb4fded272f350d132fa16e155dd3b0f1174f2",
+      "url": "https://github.com/ebhrz/KLTDataset.git",
+      "runtime_required": false,
+      "files": {}
+    },
+    {
+      "name": "TASGNSS",
+      "commit": "fdd7e8ebc0019ad9b7c73f31363de066290d057a",
+      "url": "https://github.com/PolyU-TASLAB/TASGNSS.git",
+      "runtime_required": true,
+      "files": {
+        "tasgnss/__init__.py": "c706b36aa54ee96a939b932d65192e1d2a45973973b02a466c1b960f046d60d1",
+        "tasgnss/core.py": "fc34f0f9b987889cf533ae8ec22d652556222e72d40aa16204c7998bc8fe7992"
+      }
+    },
+    {
+      "name": "TDL-GNSS",
+      "commit": "a640b2832c90daeb1ce25644a1da91c8edeb13fc",
+      "url": "https://github.com/ebhrz/TDL-GNSS.git",
+      "runtime_required": true,
+      "files": {
+        "model/model.py": "c929cc81342ec6e327f07228ee3f81f4c9305387209b828f3913ddafdbf2f02f"
+      }
+    },
+    {
+      "name": "TLIO",
+      "commit": "d7051c4ff14834b93931984b75b40f894e39654d",
+      "url": "https://github.com/CathIAS/TLIO.git",
+      "runtime_required": true,
+      "files": {
+        "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/analysis/display_json.py": "4d69f8147245d4741171d4f205ec584721375f6b73cc83aad9cb72352c86a137",
+        "src/analysis/plot_comparison_between_run.py": "6d649d3e176d8bbda3ebaea493e4682391d4d9509e96fc4b9d35ec868855b9e1",
+        "src/batch_runner/filter_batch.py": "4ea50d84c90edb9987991a448ed581c0642351e39c25064813c368389dc41fd4",
+        "src/batch_runner/net_test_batch.py": "ddf8683bee7de18571d54a1356fc2c442b027b4465f8cc1d201af28dcec5814e",
+        "src/batch_runner/plot_batch.py": "52bf710fff1d07d9e145693ef59bdd3068d2bf02bdcd706d17f9e7684ac76d82",
+        "src/convert_model_to_torchscript.py": "0e9dba438565dae824d9a01f89a5a3081ae485fb8d4e9f5fe870354d1643482d",
+        "src/dataloader/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/dataloader/constants.py": "724099d642f6c820c034956088ce32ec01c6fe9ca1c55ec79fa29ee630bb5971",
+        "src/dataloader/data_io.py": "2a62fe23f10d27d3b9571c8912c759f52414dc0103879f26b5de486d26b505e3",
+        "src/dataloader/data_transform.py": "28edc2b96c289d390b920db476adbc764d7acca745f4ce4aad59c8a84c74789c",
+        "src/dataloader/iterable_pseudorandom_sequences_dataset.py": "9618344df288f2409320ea2aa20bec66d8a4a76369284da52ee0e4d452f57422",
+        "src/dataloader/memmapped_sequences_dataset.py": "e86016e1e8aad8196b8b91e553705ca937a43d470f2aab2a561d7a5ebecb0005",
+        "src/dataloader/sequences_dataset.py": "8386853db0a2edfe399c806142dd9614af919037a6f6b22f66a1d96f099d39f9",
+        "src/dataloader/tlio_data.py": "a2c8bb7f0a1697f32008bce03ead92fcb91e4a4e977f48bf1e2defccbbdf0ea4",
+        "src/main_filter.py": "6a94bfe4f939729ec373eb9adccba987c0f0ba5215f59cb918d40d6d8079ad67",
+        "src/main_net.py": "e250b712ad9f1027d16ba16735eca1b9943909c93bf060944caf61e45779742e",
+        "src/network/__init__.py": "d5c8893d01938752fd8dd33b0c5c1d0d67e63c73b29fb08b0e3d198e308cd8ad",
+        "src/network/covariance_parametrization.py": "8ffb8febfd11048b01f81513529ab832fcea2e55fc27dca4dc81b925a9e68b3d",
+        "src/network/eval.py": "c12eb59b914aa9b2f8570c4c95061f178e0c0b981bc9061ca2663c94d35251b2",
+        "src/network/losses.py": "ce67ad04979bc02c6f390357786092a682f4b41d867e263929ae65a20f573e3c",
+        "src/network/model_factory.py": "e7112051f0fa421473abf70e52d552dda4f260bb4a5072b57eabc5eb47882134",
+        "src/network/model_resnet.py": "30e0285ab03a28fa6795d45ff335dd71cb63568d725ab3b1e11db4ae660f5633",
+        "src/network/model_resnet_seq.py": "6af0757a66fc32ad75e001264fc944c9975ae004d437fb2586f9f40f49f4c96c",
+        "src/network/model_tcn.py": "c7ce5b59fbc64ca64e21b74acbbc592b1da2fb7d0665fad77f5aedbc3980f1c3",
+        "src/network/test.py": "a847361b3e3f856c8a7192a96f8cb9cb751472b36a419f068e2afbc3fc071eeb",
+        "src/network/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/network/tests/test_covariance_parametrization.py": "ea9109a09531db68ccaff4cd3ca0663ed4b431b72010925041cf5e7d4b59b940",
+        "src/network/train.py": "1aa8e32d5ea0754953ee99c781d81fc25547fb996f8e48d8f833f31089bf1f0b",
+        "src/plot_filter_state.py": "465090ae3de82b55f34e8af992facdf6f0b39f6e301df0c9ce89baec6ded502f",
+        "src/tracker/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/tracker/imu_buffer.py": "ee81183afa7c7b06e5ed50db95f7146c8b17d2d11cf630ce34126fa25c35427e",
+        "src/tracker/imu_calib.py": "d0319c0c5e248b846fbeaf0ca5cef5bde7abbed452081fcd5ea01785ee2ba774",
+        "src/tracker/imu_tracker.py": "59cd894a088cbfa4e7f009f36411d5494f8e1b7fe0ca648953b303f3e5f64821",
+        "src/tracker/imu_tracker_runner.py": "370f71c5e3b8d7b14cdebe03abe858fac12796c135e3d7260e6643156c995f12",
+        "src/tracker/meas_source_torchscript.py": "ba179c6f51be63ee2414472a8099e3937828d1e8bb1f154c762ad67eaa20d6cb",
+        "src/tracker/scekf.py": "e824d14570f4fb520fbcf028422f123bf68f04fcb5d4e64cf87817797dbd127c",
+        "src/tracker/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/tracker/tests/test_state.py": "f025e00969d9adac65e85dc5c5e6b7301a230fdcc815eabac54ea283df1c0ede",
+        "src/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "src/utils/alignment.py": "f85b442307d36c8b8bd2242a475d07aa502197aa461b92cf323dc1365c1031ad",
+        "src/utils/argparse_utils.py": "c6c7bb55fd4061acd9dfc59b44bb1637fde3a54fae205104b5932a0beecb6187",
+        "src/utils/dotdict.py": "b13094a0f73fe0afc5489fc905660dd08ebcb26ed4ba21446d3d33eb79862cd9",
+        "src/utils/from_scipy.py": "56f2aa7e8f06f49c95bb79b8f05edbd8ae44af6dba1cab09ba3c6aa540f748fd",
+        "src/utils/logging.py": "cbb5533385caed451a55c892c2842b0a16e3763d5a712be9ec4b06750eb2c61c",
+        "src/utils/math_utils.py": "dbac300f818b48cf6e535e8f22331f932e1baac168969940c34610a7f222dfc9",
+        "src/utils/o3d_visualizer.py": "09036081814dd5310937cbe1e8a0289da81f3d28a723c0295c533158dd5d6822",
+        "src/utils/quiet_numba.py": "b89f51f73afb71de610aaf268afc1eb80c9c39e3cf8cfbae0f07afbb899e6526",
+        "src/utils/torch_math_utils.py": "007997846ee82d118adb7d42a2a806d39c93149a245771b3e1407e8ff08e6cef",
+        "src/utils/utils.py": "2e2f8384f4520a2c8304f7bb040f38364ca706b1a2c4f99245ef6a3153dcf209"
+      }
+    },
+    {
+      "name": "UTIL",
+      "commit": "fef243ab3ac88674542e53c4282f8f5a52e0d1e9",
+      "url": "https://github.com/learnsyslab/util-uwb-dataset.git",
+      "runtime_required": true,
+      "files": {
+        "scripts/estimation/eskf_class.py": "8be3d0d644e0354aebcf51b8a052050f2955033a602a0bfd22e86cae36bf3a91",
+        "scripts/estimation/main.py": "72ad6760e1762c62b2ca0492759a277c512e67244406a03ffaea1448fb5568a1",
+        "scripts/estimation/plot_util.py": "071fb50a7f0a0a8198c71abe9dad837499119166dc2cecc7a7eec6a399b7b548"
+      }
+    },
+    {
+      "name": "UWB_TDOA",
+      "commit": "9c366523e742985557e654534e4bfd43b346f091",
+      "url": "https://github.com/Williamwenda/UWB_TDOA_dataset.git",
+      "runtime_required": false,
+      "files": {}
+    }
+  ]
+}

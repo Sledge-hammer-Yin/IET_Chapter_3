@@ -1,0 +1,6 @@
+{
+  "purpose": "Checks whether suppressing motion alone explains an apparent benefit over drifting IMU integration",
+  "timing": "Added after the frozen main training protocol; no network or hyperparameter changed in response",
+  "state": "Keep the shared initial reference position constant for the complete sequence",
+  "not_used_for": "Training, validation checkpoint selection or parameter tuning"
+}

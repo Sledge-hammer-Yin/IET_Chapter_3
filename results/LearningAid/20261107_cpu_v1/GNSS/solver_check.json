@@ -1,0 +1,5 @@
+{
+  "upstream_position_difference_m": 2.2137284882375436e-08,
+  "baseline_tolerance_m": 0.002,
+  "gradient_finite": true
+}

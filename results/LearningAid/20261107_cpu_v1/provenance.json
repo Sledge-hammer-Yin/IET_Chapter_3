@@ -1,0 +1,534 @@
+{
+  "run_id": "20261107_cpu_v1",
+  "created_utc": "2026-11-07T10:34:11Z",
+  "server": "taslab-service01",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "libraries": {
+    "torch": "2.15.0+cpu",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "resources": {
+    "device": "cpu",
+    "threads": 2,
+    "nice": 19,
+    "loader_workers": 0,
+    "gpu_use": false
+  },
+  "repositories": [
+    {
+      "name": "AirIMU",
+      "commit": "119fe7ce229e321b3890282909a183aefad61dfb",
+      "url": "https://github.com/haleqiu/AirIMU.git"
+    },
+    {
+      "name": "AirIO",
+      "commit": "7214e8a6ddee95ca07a64f01f1fa3e2f8f60df73",
+      "url": "https://github.com/Air-IO/Air-IO.git"
+    },
+    {
+      "name": "KLT",
+      "commit": "83fb4fded272f350d132fa16e155dd3b0f1174f2",
+      "url": "https://github.com/ebhrz/KLTDataset.git"
+    },
+    {
+      "name": "TASGNSS",
+      "commit": "fdd7e8ebc0019ad9b7c73f31363de066290d057a",
+      "url": "https://github.com/PolyU-TASLAB/TASGNSS.git"
+    },
+    {
+      "name": "TDL-GNSS",
+      "commit": "a640b2832c90daeb1ce25644a1da91c8edeb13fc",
+      "url": "https://github.com/ebhrz/TDL-GNSS.git"
+    },
+    {
+      "name": "TLIO",
+      "commit": "d7051c4ff14834b93931984b75b40f894e39654d",
+      "url": "https://github.com/CathIAS/TLIO.git"
+    },
+    {
+      "name": "UTIL",
+      "commit": "fef243ab3ac88674542e53c4282f8f5a52e0d1e9",
+      "url": "https://github.com/learnsyslab/util-uwb-dataset.git"
+    },
+    {
+      "name": "UWB_TDOA",
+      "commit": "9c366523e742985557e654534e4bfd43b346f091",
+      "url": "https://github.com/Williamwenda/UWB_TDOA_dataset.git"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "/data/users/taslab_zxp/projects/Chapter3_Learning/benchmark_and_diagnostics.py",
+      "sha256": "1a6e495229d6bf4b2fa6f6b750d2cde07107aed1bdc2e5759031c53f58b67905"
+    },
+    {
+      "path": "/data/users/taslab_zxp/projects/Chapter3_Learning/common.py",
+      "sha256": "7b18898e3088780f51fe7fc5f9db2256a0dc396b95a3df2d67fbbef589f778f8"
+    },
+    {
+      "path": "/data/users/taslab_zxp/projects/Chapter3_Learning/create_report.py",
+      "sha256": "701871e57c84a194b87c1bb9ae943247c9de49fa239a107ae81b81f49530dcbd"
+    },
+    {
+      "path": "/data/users/taslab_zxp/projects/Chapter3_Learning/generate_results.py",
+      "sha256": "bf87ae5bfe9eddc7248ed6c6642f7980b5e0385600e4a2792e05f6b6ccbd2832"
+    },
+    {
+      "path": "/data/users/taslab_zxp/projects/Chapter3_Learning/package_results.py",
+      "sha256": "d2dfa3dd92a2041c4b9b71e863ea2cba18ab92db8e268fa8b6d116ceb0a99ed5"
+    },
+    {
+      "path": "/data/users/taslab_zxp/projects/Chapter3_Learning/prepare_gnss.py",
+      "sha256": "da21fd04832f8d8fe33a059ee9e2a4b26c36341fbda551f2589abd974e27824b"
+    },
+    {
+      "path": "/data/users/taslab_zxp/projects/Chapter3_Learning/prepare_io.py",
+      "sha256": "71775528d28a0c89aaf5bcae3d2a536d51d75aeff034bdd761d1a799175cc442"
+    },
+    {
+      "path": "/data/users/taslab_zxp/projects/Chapter3_Learning/provenance_and_cleanup.py",
+      "sha256": "16d29b8988dbef75c81bcf005d1d529f7f164b5aa3c3004c45db017cdf810e3a"
+    },
+    {
+      "path": "/data/users/taslab_zxp/projects/Chapter3_Learning/run_gnss.py",
+      "sha256": "9dec0851ca8285ca2b9fb59a95cdb80128fcad694cbbd4b53a2959e18d670269"
+    },
+    {
+      "path": "/data/users/taslab_zxp/projects/Chapter3_Learning/run_io.py",
+      "sha256": "e4014dd708c3292098f30bc1cb46583873b0a2d115f42a01790ffd94e8910351"
+    },
+    {
+      "path": "/data/users/taslab_zxp/projects/Chapter3_Learning/run_uwb.py",
+      "sha256": "e2b1f82120bc29f45daf248c5e820be2949e4219b415031ad0362ad7b3868105"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/MH_01_easy/mav0/imu0/data.csv",
+      "bytes": 5210832,
+      "sha256": "226470999dc8ba758c838982fd7eb2bc9f3f2b489e85a38d0ecf8b9d40785a5b"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/MH_01_easy/mav0/state_groundtruth_estimate0/data.csv",
+      "bytes": 6225269,
+      "sha256": "aae2d7c5684724c8afe364d2fd8499a6ed77a9169adf03736531f67d8e7b2117"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/MH_02_easy/mav0/imu0/data.csv",
+      "bytes": 4302332,
+      "sha256": "7add4feaa342c6b6874996058b6b5679d908eca25b7e063eae46fec49558cc8e"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/MH_02_easy/mav0/state_groundtruth_estimate0/data.csv",
+      "bytes": 5135160,
+      "sha256": "f49666ad4991c80bc467fc05e6d250cec7e28fbd05c1643402298e67438f754f"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/MH_03_medium/mav0/imu0/data.csv",
+      "bytes": 3815432,
+      "sha256": "5defd7c9770344df34ebbd5805264341f8a4920c13a22e1b9ef8607168cad02e"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/MH_03_medium/mav0/state_groundtruth_estimate0/data.csv",
+      "bytes": 4504568,
+      "sha256": "7e52fd28088b0d428509cc365fbb44ed5d910e5174ac155e1d987923c056000f"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/MH_04_difficult/mav0/imu0/data.csv",
+      "bytes": 2871307,
+      "sha256": "330c25e4532c1f27853d0eeee06968d5c4c00c16be1187fdcfd909cfe060360c"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/MH_04_difficult/mav0/state_groundtruth_estimate0/data.csv",
+      "bytes": 3380116,
+      "sha256": "c13de3d5ba9ead60688505d4773286c290fa642264943c88aa182d0eac9f4960"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/MH_05_difficult/mav0/imu0/data.csv",
+      "bytes": 3215270,
+      "sha256": "e6498fb86f0b618abb07b256b1822957bb4bcf158d07cc82d3b43ca8166ec004"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/MH_05_difficult/mav0/state_groundtruth_estimate0/data.csv",
+      "bytes": 3800565,
+      "sha256": "da13e5dcb3d5fc2f12c4e8bfae10dd380d765150be3312f989b0bc5550965451"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V1_01_easy/mav0/imu0/data.csv",
+      "bytes": 4113500,
+      "sha256": "4cef78a5cf7c8ee52016a160de4b50184da2a216d615feb7ebbbb3bc99efa89e"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V1_01_easy/mav0/state_groundtruth_estimate0/data.csv",
+      "bytes": 505731,
+      "sha256": "16543952bf69f3fb886008a26cc21d3c552deca8fa06087f0bc329c09d7fcbe3"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V1_01_easy/mav0/state_groundtruth_estimate0/data_openvins.csv",
+      "bytes": 505731,
+      "sha256": "16543952bf69f3fb886008a26cc21d3c552deca8fa06087f0bc329c09d7fcbe3"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V1_01_easy/mav0/vicon0/data.csv",
+      "bytes": 2397606,
+      "sha256": "3fddf9d1a7b5d1d84a28dd4bb9e90d15218168dd8a88ed7bbf55882552a8a390"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V1_02_medium/mav0/imu0/data.csv",
+      "bytes": 2405855,
+      "sha256": "51804ce6362dc200fff3ed6a3aba1df769528badf1a877d19d5cac976a544c09"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V1_02_medium/mav0/state_groundtruth_estimate0/data.csv",
+      "bytes": 2837076,
+      "sha256": "fed415eee44313584b9c4f61010dac146d5e4a4a35301db25b1ecd7d4d91b5f0"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V1_03_difficult/mav0/imu0/data.csv",
+      "bytes": 3024020,
+      "sha256": "543835f7b7dd9d1287c9052955e030ade113c51dc97ec2c15d13a318521ad0d7"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V1_03_difficult/mav0/state_groundtruth_estimate0/data.csv",
+      "bytes": 3551709,
+      "sha256": "703ba51a854daba80f20df93e76605c2278b3f227afe2bcbe9eb4255186fc3d9"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V2_01_easy/mav0/imu0/data.csv",
+      "bytes": 3217729,
+      "sha256": "d8df41e85c12761104043264a61054ad4bfa19087886e847f4e0412a19cd1633"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V2_01_easy/mav0/state_groundtruth_estimate0/data.csv",
+      "bytes": 3832485,
+      "sha256": "315807fd7d91868ed6085a3d8fde40315842135f13199ed83e2e6270eb5b5126"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V2_02_medium/mav0/imu0/data.csv",
+      "bytes": 3305153,
+      "sha256": "7f1028007d030a38e5c7e2cee19ca773015b2fecbbbe80794f5c34e900b2ee8e"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V2_02_medium/mav0/state_groundtruth_estimate0/data.csv",
+      "bytes": 3921620,
+      "sha256": "019ec178d0d2636dca66808f6422ae835b24f14184c54823b3a4a47bf187be2d"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V2_03_difficult/mav0/imu0/data.csv",
+      "bytes": 3283929,
+      "sha256": "55911f078feea76eb5bdeb97c9ebbebb679de39c4dd44c50e81064d5d8cf77f6"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/EuRoC/V2_03_difficult/mav0/state_groundtruth_estimate0/data.csv",
+      "bytes": 3915115,
+      "sha256": "2c273cf35909c4ca7786137cf63f04cf292ca13da48c406c72b8e96a2b1372e5"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/KLT/0610_KLT/20210610_100.txt",
+      "bytes": 175118390,
+      "sha256": "9f7ae89cfe4db0470e78ad1cc6b0a3209a740f5ed2f0500b6dac532cc4f58b42"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/KLT/0610_KLT/COM38_210610_025603.obs",
+      "bytes": 43298475,
+      "sha256": "f722557326d1d32c42e023d4e78515e885d21c8ae824e79460bef61c67b9b5c4"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/KLT/0610_KLT/GEOP161D.21o",
+      "bytes": 10969382,
+      "sha256": "32c13e89efee9ce67e1a65fe1504435661390a9fec735caacc1b3e0864b2cb7d"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/KLT/0610_KLT/sta/hksc161d.21f",
+      "bytes": 30066,
+      "sha256": "64e8e3ec2f4a9eeb17379a499e5779d378978b834a1a1441240e487e7ce23768"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/KLT/0610_KLT/sta/hksc161d.21g",
+      "bytes": 12854,
+      "sha256": "0bddf6292d39f00845e9038f7f87dcecc403ec9944ca144b7345bcb233d8e660"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/KLT/0610_KLT/sta/hksc161d.21l",
+      "bytes": 66436,
+      "sha256": "795de82407d394097628a7a2595e284d666df3dc62c4ad5a34896d6de05b84e3"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/KLT/0610_KLT/sta/hksc161d.21m",
+      "bytes": 3593,
+      "sha256": "9583d5e061d46f3de29b6f783332dda9e7ff61d62041f2c8a031f6b45628e376"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/KLT/0610_KLT/sta/hksc161d.21n",
+      "bytes": 21558,
+      "sha256": "a5bc8ab35fe0c80f91d0e57517b495be6563385d235835fd6aa063d73bb7072c"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/KLT/0610_KLT/sta/hksc161d.21o",
+      "bytes": 25337376,
+      "sha256": "7335032796f9b46176c359e8a39cc3f8496dd1f3fd6003fcfb9a794aafe88dd6"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const1/const1-trial1-tdoa2.csv",
+      "bytes": 31773810,
+      "sha256": "e99d62b3a82b78852c8d2e90b17f57a29361f6d44f14f2a0b9e4b9061e7a716c"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const1/const1-trial2-tdoa2.csv",
+      "bytes": 26925882,
+      "sha256": "c693e9299ebe91b55a73f1abfa98daf528335785da83de16c3f4552b2aa010a3"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const1/const1-trial3-tdoa2.csv",
+      "bytes": 27265494,
+      "sha256": "6710e8fac0dd386304320c5e4e31204a9dd2df71f33a5af0443e86763b833244"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const2/const2-trial1-tdoa2.csv",
+      "bytes": 27222786,
+      "sha256": "ed8ed07c9f707080a170d233cc70fa66a61af65db73f43bf742495152899a63b"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const2/const2-trial2-tdoa2.csv",
+      "bytes": 27047379,
+      "sha256": "271ffde19501c9c340f6927028d38646cab26204640a7b8ad2062bdfbeb5ef51"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const2/const2-trial3-tdoa2.csv",
+      "bytes": 28366092,
+      "sha256": "7d3faf58031223bd0434d97b7fcb0fe2d5245aa68da688aea2ed62bf0b840bf1"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const3/const3-trial1-tdoa2.csv",
+      "bytes": 31698660,
+      "sha256": "b9586baed32ce0fb255903bb73a93b82800c92112691b9cda264a81807049a43"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const3/const3-trial2-tdoa2.csv",
+      "bytes": 30347085,
+      "sha256": "93eca933c31232a6cd9b4e2cb9cd6a66aee3b0a5c08770f879700542d44ba7d1"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const3/const3-trial3-tdoa2.csv",
+      "bytes": 27881009,
+      "sha256": "d2286f30fc2a30a1eac1c5523f76b04809976eb54bfa4433c71f4c936579cf8a"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const4/const4-trial1-tdoa2-traj1.csv",
+      "bytes": 27819679,
+      "sha256": "af95d74bac080170ee2a877fb3a0e946e801081ef5e8709d793a07b27957ad94"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const4/const4-trial1-tdoa2-traj2.csv",
+      "bytes": 28901661,
+      "sha256": "da55a1b2aae9d6b3bd51ac2530c3e5e9b6adcd38d178657c7c9d0f3d34bc607b"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const4/const4-trial1-tdoa2-traj3.csv",
+      "bytes": 27683821,
+      "sha256": "67f56a8878b38effc8e82d22885367403dc1fed3ba5f9f4099c5fface9c5364b"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const4/const4-trial2-tdoa2-traj1.csv",
+      "bytes": 28194405,
+      "sha256": "a5458f2b592ffd4ab40d9f24400d2e8b408b8ac01598f27c89446ddc9d20f698"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const4/const4-trial2-tdoa2-traj2.csv",
+      "bytes": 27974259,
+      "sha256": "997f04023981015903b075e0e64ebfcdd1b2d8d5bea30fa615ec397b8394f70b"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const4/const4-trial2-tdoa2-traj3.csv",
+      "bytes": 27895791,
+      "sha256": "682c6df3db4d9f032e79867fdd61dd5e4deb5b93d582fa2c98066ef3cb9be40f"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const4/const4-trial3-tdoa2-traj1.csv",
+      "bytes": 27805278,
+      "sha256": "d37bd9523a082abed2bfaedc5532b8832136cf8be482087b7546b6ae9722df49"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const4/const4-trial3-tdoa2-traj2.csv",
+      "bytes": 27785577,
+      "sha256": "32742e797fc72eb7d72e689dd1b4d12f7e1c9b8e2e02567d5b9d1d9c0873fa6c"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/csv-data/const4/const4-trial3-tdoa2-traj3.csv",
+      "bytes": 28159443,
+      "sha256": "b125ec5df81994a53a2b40bad1c5416da6e193717aff80f0ab4c15e895cce97f"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/survey-results/anchor_const1.npz",
+      "bytes": 960,
+      "sha256": "a4d3c806c5cfce64d680cdb0d43b64431812ffc2b4dcafadad5d90522d20dc14"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/survey-results/anchor_const2.npz",
+      "bytes": 960,
+      "sha256": "e5c57b8b90ffcf598348aa7adc355fe0048b8fba04aab4be4b76143fe158f9ec"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/survey-results/anchor_const3.npz",
+      "bytes": 960,
+      "sha256": "f377fd2bf356f85c308afc6d3829b01d7e00c81b534a858b7c2cf3d16fc786ba"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UTIL/dataset/flight-dataset/survey-results/anchor_const4.npz",
+      "bytes": 960,
+      "sha256": "bb2bd8e5c2d44b86c4156468d0676a28d60c26c9b71810e84638375eeee21b5a"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/gnss/20210521.medium-urban.whampoa.ublox.f9p.obs",
+      "bytes": 5760663,
+      "sha256": "484bdafe37a6792ff9b967cba0927a36b322a4e18da05bb3ef8b6635d3fe2163"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/gnss/hksc1410.21o",
+      "bytes": 20377114,
+      "sha256": "cc0b03ed29d781e4ad8c0989da09478dc1c491824aa41dae08326d3a21b330e8"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/gnss/hksc141g.nav",
+      "bytes": 139060,
+      "sha256": "5c93296f70ef3ce1c37a813c8df064f950b900214185f65bc19a7757948aabfe"
+    },
+    {
+      "path": "/data/users/taslab_zxp/datasets/UrbanNav/Deep-Urban-1/ground_truth/UrbanNav_whampoa_raw.txt",
+      "bytes": 274298,
+      "sha256": "cb35bc9ebfb171147d290672a46b9d7426475501c922d84ae81edde92c3ba272"
+    }
+  ],
+  "checkpoints": [
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/GNSS/TDL-W/seed_7/best.pt",
+      "bytes": 142549,
+      "sha256": "f6aacd45ae6528ff7ed192a96e73d1cd7550ea98460788af15ba883bbc419f82"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/GNSS/TDL-W/seed_19/best.pt",
+      "bytes": 142549,
+      "sha256": "0208f81d3a0ae4ec0812d5a3c25c8b9d3990a52b85b98a4fb53c1b7ec72ea93a"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/GNSS/TDL-W/seed_42/best.pt",
+      "bytes": 142549,
+      "sha256": "39ef633394adea11715aad0576d835589c009892b1e7c5726ed349d696751748"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/GNSS/TDL-B/seed_7/best.pt",
+      "bytes": 142549,
+      "sha256": "b1e203ff3cc41e3fdad1a7965d8f4874a8a26c5e78ce7c664d39c3edb7e35b66"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/GNSS/TDL-B/seed_19/best.pt",
+      "bytes": 142549,
+      "sha256": "10e4f5ef26f42f40f6263b8b8319b4acacbe1b084084bb2dd5c0bca13ef7c0e8"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/GNSS/TDL-B/seed_42/best.pt",
+      "bytes": 142549,
+      "sha256": "17480c58a8e1122eda951de1d5aad5f3e1740de0db459f8d27323c7f32be5e59"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/GNSS/TDL-BW/seed_7/best.pt",
+      "bytes": 142549,
+      "sha256": "9a35f6970279de483eb5efe9c810ee8b16d64736bfff424e2753948df6819485"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/GNSS/TDL-BW/seed_19/best.pt",
+      "bytes": 142549,
+      "sha256": "c88b577eb81baa8fd3f6c2fcd7484a52df9d27cd1343a67ace4c10ced9648b93"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/GNSS/TDL-BW/seed_42/best.pt",
+      "bytes": 142549,
+      "sha256": "964eee20cdbb56add2666e0550426629a348b0f755691490815f4e6d37adbf0d"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/UWB/seed_7/best.pt",
+      "bytes": 22883,
+      "sha256": "9004df3be18dc5c5ad2445f7473ab2865b6970f64a8d905e3c1e1b5a18996e2d"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/UWB/seed_19/best.pt",
+      "bytes": 22883,
+      "sha256": "272571b68868834a3a93fd885684801309edb0a51a5284398b499e678e246eb2"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/UWB/seed_42/best.pt",
+      "bytes": 22883,
+      "sha256": "74f88ed2a0a0ee82650c5cedc695f00d649f7f36240d239ed1d841c43e2e99c6"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/IO/TLIO/seed_7/best.pt",
+      "bytes": 21779229,
+      "sha256": "d78c191b248371bb3fbd686ab7cdb73f08ef84f8d3bceb738718a3c2bdb42737"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/IO/TLIO/seed_7/best.torchscript.pt",
+      "bytes": 21899126,
+      "sha256": "4b4269b78bb57010ad30b110eeb381f60652a9c26dc268ea4649f6cd038f443b"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/IO/TLIO/seed_19/best.pt",
+      "bytes": 21779229,
+      "sha256": "695151b2cc1fd82aef755fac256a0b394fd2b8ceebc199d186295f18363677e6"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/IO/TLIO/seed_19/best.torchscript.pt",
+      "bytes": 21903446,
+      "sha256": "07df1c7f68916c6467fba596fa1904edf8207c0569a69e81f0e03dee9036dcb5"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/IO/TLIO/seed_42/best.pt",
+      "bytes": 21779229,
+      "sha256": "58a68129242270cec16e6beeb76c67fc311d56837b504b82dafe214d12e2688b"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/IO/TLIO/seed_42/best.torchscript.pt",
+      "bytes": 21903510,
+      "sha256": "9ada197158af0c391950b941f662826a9933ccda7c66c13341ea08541891f4ca"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/IO/AirIO/seed_7/best.pt",
+      "bytes": 1572849,
+      "sha256": "ed5f42de256f76c306f22199efbec016c5d384b675fdfa548a477e14489a3efe"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/IO/AirIO/seed_19/best.pt",
+      "bytes": 1572849,
+      "sha256": "4b3d5e72f4672f9272342c21764f8966aa96dd000642359f34940b908c3c5a18"
+    },
+    {
+      "path": "/data/users/taslab_zxp/models/Chapter3_3.5/20261107_cpu_v1/IO/AirIO/seed_42/best.pt",
+      "bytes": 1572849,
+      "sha256": "7e18ee3d61010887d604d1e451888b640ad37f43f4cd84eb0c5b917ab0e9d082"
+    }
+  ],
+  "archive_hashes_before_removal": {
+    "dataset.7z": {
+      "bytes": 1861803968,
+      "sha256": "614aae9dd13f0881496b180488ee08fe7fc2bb488a91973ff80e29e91b591865"
+    },
+    "KLT_data.zip": {
+      "bytes": 58785110,
+      "sha256": "2afd7b1e395f8494e6992d1e109f9e8d9d83d992bf6d446d83d91aaf46cfc721"
+    },
+    "EuRoC-Dataset.zip": {
+      "bytes": 20221602,
+      "sha256": "de09fdd03e9147461fd678aa6763454bdf8d1f07172753a9ec80073e9be38e4a"
+    },
+    "V101-reference.zip": {
+      "bytes": 185158,
+      "sha256": "2006e18061a30716879b1c7b0caad04fd6b2f8755d35859021c1dff3ee1e9c7c"
+    },
+    "source_code.tar.gz": {
+      "bytes": 248036,
+      "sha256": "f1f481566b53a8a56546e6b2ca1508c254feeaaf113a29035262b5ae57a7fc35"
+    }
+  },
+  "source_snapshot_note": "UTIL and UWB_TDOA retain source and upstream commit IDs; unused public data/media and Git blob copies were removed. Fetch the recorded URL and revision for a full checkout."
+}

@@ -1,0 +1,18 @@
+{
+  "sequence": "MH_04_difficult",
+  "method": "TLIO",
+  "seed": 19,
+  "samples": 938,
+  "duration_s": 93.69999999999966,
+  "rmse_3d_m": 9.401558302117406,
+  "rmse_horizontal_m": 7.821793126126615,
+  "mae_3d_m": 8.188037752135655,
+  "p95_3d_m": 15.626749631381484,
+  "max_3d_m": 16.26626404079077,
+  "rpe_10s_m": 8.760976282215584,
+  "final_drift_m": 7.719889379657226,
+  "wall_s": 4.023824360978324,
+  "updates": 488.0,
+  "accepted_updates": "",
+  "output_availability_pct": 100.0
+}

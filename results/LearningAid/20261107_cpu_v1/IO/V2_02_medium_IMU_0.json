@@ -1,0 +1,18 @@
+{
+  "sequence": "V2_02_medium",
+  "method": "IMU",
+  "seed": 0,
+  "samples": 1105,
+  "duration_s": 110.39999999999961,
+  "rmse_3d_m": 218.71655761905458,
+  "rmse_horizontal_m": 218.17565052725251,
+  "mae_3d_m": 143.64475126815617,
+  "p95_3d_m": 520.2105567740434,
+  "max_3d_m": 631.5233575906332,
+  "rpe_10s_m": 81.78878908374979,
+  "final_drift_m": 631.5233575906332,
+  "wall_s": 0.40509914996800944,
+  "updates": 0.0,
+  "accepted_updates": 0.0,
+  "output_availability_pct": 100.0
+}

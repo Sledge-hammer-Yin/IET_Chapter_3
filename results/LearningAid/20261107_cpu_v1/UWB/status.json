@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "methods": [
+    "ESKF",
+    "Huber-ESKF",
+    "NN-ESKF",
+    "NN-Huber-ESKF"
+  ],
+  "seeds": [
+    7,
+    19,
+    42
+  ]
+}

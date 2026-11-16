@@ -1,0 +1,146 @@
+[
+  {
+    "group": "GNSS",
+    "method": "TDL-W",
+    "seed": 7,
+    "best_epoch": 18,
+    "training_epochs_completed": 43,
+    "validation_score": 3.5366264534111385
+  },
+  {
+    "group": "GNSS",
+    "method": "TDL-B",
+    "seed": 7,
+    "best_epoch": 23,
+    "training_epochs_completed": 48,
+    "validation_score": 5.381504591184588
+  },
+  {
+    "group": "GNSS",
+    "method": "TDL-BW",
+    "seed": 7,
+    "best_epoch": 26,
+    "training_epochs_completed": 51,
+    "validation_score": 3.3757254369403893
+  },
+  {
+    "group": "UWB",
+    "method": "BiasNet",
+    "seed": 7,
+    "best_epoch": 24,
+    "training_epochs_completed": 39,
+    "validation_score": 0.19714259097215106
+  },
+  {
+    "group": "IO",
+    "method": "TLIO",
+    "seed": 7,
+    "best_epoch": 15,
+    "training_epochs_completed": 25,
+    "validation_score": 1.183068285948044
+  },
+  {
+    "group": "IO",
+    "method": "AirIO",
+    "seed": 7,
+    "best_epoch": 31,
+    "training_epochs_completed": 40,
+    "validation_score": 0.5632260722780906
+  },
+  {
+    "group": "GNSS",
+    "method": "TDL-W",
+    "seed": 19,
+    "best_epoch": 15,
+    "training_epochs_completed": 40,
+    "validation_score": 3.5357622514016724
+  },
+  {
+    "group": "GNSS",
+    "method": "TDL-B",
+    "seed": 19,
+    "best_epoch": 25,
+    "training_epochs_completed": 50,
+    "validation_score": 5.389930129069547
+  },
+  {
+    "group": "GNSS",
+    "method": "TDL-BW",
+    "seed": 19,
+    "best_epoch": 6,
+    "training_epochs_completed": 31,
+    "validation_score": 3.946487559250311
+  },
+  {
+    "group": "UWB",
+    "method": "BiasNet",
+    "seed": 19,
+    "best_epoch": 2,
+    "training_epochs_completed": 17,
+    "validation_score": 0.19650216183249752
+  },
+  {
+    "group": "IO",
+    "method": "TLIO",
+    "seed": 19,
+    "best_epoch": 13,
+    "training_epochs_completed": 23,
+    "validation_score": 1.133707493953758
+  },
+  {
+    "group": "IO",
+    "method": "AirIO",
+    "seed": 19,
+    "best_epoch": 29,
+    "training_epochs_completed": 39,
+    "validation_score": 0.5721272636553818
+  },
+  {
+    "group": "GNSS",
+    "method": "TDL-W",
+    "seed": 42,
+    "best_epoch": 12,
+    "training_epochs_completed": 37,
+    "validation_score": 3.4944871874397263
+  },
+  {
+    "group": "GNSS",
+    "method": "TDL-B",
+    "seed": 42,
+    "best_epoch": 52,
+    "training_epochs_completed": 77,
+    "validation_score": 5.118450932859459
+  },
+  {
+    "group": "GNSS",
+    "method": "TDL-BW",
+    "seed": 42,
+    "best_epoch": 20,
+    "training_epochs_completed": 45,
+    "validation_score": 3.4795064816985626
+  },
+  {
+    "group": "UWB",
+    "method": "BiasNet",
+    "seed": 42,
+    "best_epoch": 2,
+    "training_epochs_completed": 17,
+    "validation_score": 0.1966492399193492
+  },
+  {
+    "group": "IO",
+    "method": "TLIO",
+    "seed": 42,
+    "best_epoch": 12,
+    "training_epochs_completed": 22,
+    "validation_score": 1.1792876253030824
+  },
+  {
+    "group": "IO",
+    "method": "AirIO",
+    "seed": 42,
+    "best_epoch": 31,
+    "training_epochs_completed": 40,
+    "validation_score": 0.5422270669708752
+  }
+]

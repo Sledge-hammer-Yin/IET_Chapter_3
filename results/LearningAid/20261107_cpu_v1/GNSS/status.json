@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "methods": [
+    "WLS",
+    "TDL-W",
+    "TDL-B",
+    "TDL-BW"
+  ],
+  "seeds": [
+    7,
+    19,
+    42
+  ]
+}

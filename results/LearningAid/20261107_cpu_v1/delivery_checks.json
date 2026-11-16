@@ -1,0 +1,49 @@
+{
+  "verified_manifest_files": 252,
+  "pdf_embedded_fonts": {
+    "euroc_relative_error.pdf": [
+      "/FMQGQP+TimesNewRomanPSMT"
+    ],
+    "urbannav_gnss_error_cdf.pdf": [
+      "/UNBHMR+TimesNewRomanPSMT"
+    ],
+    "util_uwb_error_cdf.pdf": [
+      "/FPEBSM+TimesNewRomanPSMT"
+    ]
+  },
+  "png_images": {
+    "euroc_relative_error.png": {
+      "width_px": 1826,
+      "height_px": 1311,
+      "dpi": [
+        399.9992,
+        399.9992
+      ]
+    },
+    "urbannav_gnss_error_cdf.png": {
+      "width_px": 1830,
+      "height_px": 1192,
+      "dpi": [
+        399.9992,
+        399.9992
+      ]
+    },
+    "util_uwb_error_cdf.png": {
+      "width_px": 1830,
+      "height_px": 1192,
+      "dpi": [
+        399.9992,
+        399.9992
+      ]
+    }
+  },
+  "metric_rows": {
+    "GNSS": 10,
+    "UWB": 72,
+    "IO": 40
+  },
+  "models_with_checked_validation_selection": 18,
+  "original_manuscript_unchanged": true,
+  "visual_review": "All three PNGs inspected; complete axes, labels, legends and error bars; IO legend moved outside the data area; no subfigures",
+  "scope_limit": "No onboard flight timing or full original AirIO-system reproduction"
+}
