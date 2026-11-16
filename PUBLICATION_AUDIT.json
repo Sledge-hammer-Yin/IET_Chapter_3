@@ -143,8 +143,8 @@
     },
     {
       "path": "algorithms/LearningAid/models.json",
-      "sha256": "b6f4ef5c46c4ccfe6a0a29ec09f4afca9afdd09fe81517b3d24ba25473890b6c",
-      "bytes": 4169
+      "sha256": "d870d5ce87fea05b15e9f834dbf6741b80644ef082443cdaf1907c2fb36e2bb3",
+      "bytes": 4296
     },
     {
       "path": "algorithms/LearningAid/prepare_gnss.py",
@@ -208,8 +208,8 @@
     },
     {
       "path": "chapters/section_3_5/README.md",
-      "sha256": "90c102f42b1cc47505745c2e3bdac12debc49b479f54b40be9ef17a73665f623",
-      "bytes": 4435
+      "sha256": "fac9c07b415cd3a92e1a879cd1b1d26a2ea8306ec0b9c7942d7d99f02838db5b",
+      "bytes": 4549
     },
     {
       "path": "chapters/section_3_6/README.md",
@@ -428,8 +428,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "67871c91b080a9330e8f788ac3adfacfb1c656d00c845d16102de10978bc7fc5",
-      "bytes": 5884
+      "sha256": "d1809817626de5d5be9cc2e11af935eae2d47f7292a09ad6a15e729622e2864c",
+      "bytes": 6000
     },
     {
       "path": "results/Deep-Urban-1/B1_ESKF.json",
@@ -2412,5 +2412,14 @@
       "bytes": 3206
     }
   ],
-  "model_weights": "Local backup only; no public model asset."
+  "model_weights": {
+    "location": "https://github.com/Sledge-hammer-Yin/IET_Chapter_3/releases/tag/chapter3-learning-20261107",
+    "sha256": "032f1968355a499ab85c35ed810258e76408f30f8336a7ca13f5f2b792600055",
+    "github_digest_verified": true,
+    "model_files": 21,
+    "metadata_files": 18,
+    "torchscript_code_files": 250,
+    "pickle_string_literals": 3000,
+    "chinese_text_matches": 0
+  }
 }

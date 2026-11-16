@@ -69,9 +69,9 @@ nice -n 19 python scripts/LearningAid/run.py io --output ../runs/learning-new --
 ```
 
 These commands run sequentially. Use a new, empty model directory to train.
-Recorded weights are retained in the local backup and are not publicly hosted.
-To reuse a checked local copy, pass its directory as `--models`.
-`fetch_models.py` verifies the existing files against `models.json`.
+Download the recorded weights with `python algorithms/LearningAid/fetch_models.py`.
+The script checks the archive and every model file against `models.json`.
+To reuse the downloaded weights, pass their directory as `--models`.
 Existing checkpoints are reused; this is replay, not retraining.
 The `all` action also runs the timing diagnostic and creates all figures.
 The `diagnostics` action reads raw inputs and completed replay outputs.
@@ -84,6 +84,6 @@ See the [measured result report](../../results/LearningAid/20261107_cpu_v1/READM
 GNSS and UWB are controlled teaching examples. The inertial result must retain
 its fixed-position control and negative absolute-error result. These are separate
 comparisons; do not combine them with Section 3.4 into one ranking.
-Model checksums are included, but trained weights are retained locally.
+Recorded weights are available as a checked asset in the [Section 3.5 release](https://github.com/Sledge-hammer-Yin/IET_Chapter_3/releases/tag/chapter3-learning-20261107).
 Raw datasets, private backups, upstream histories and installed environments
 are not publication files.
