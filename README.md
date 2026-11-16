@@ -86,8 +86,8 @@ validation and run commands. [Saved results](results/LearningAid/20261107_cpu_v1
 include English tables and three Times New Roman figures. The inertial comparison
 includes its fixed-position control and negative absolute-error result.
 Validate saved outputs with `python scripts/LearningAid/run.py validate`.
-Raw datasets and installed environments are not uploaded. Recorded model weights
-are provided as assets of the Section 3.5 release in this repository.
+Raw datasets and installed environments are not uploaded. Model checksums are recorded; trained weights are retained locally.
+Training can recreate them with the recorded protocol.
 
 ## Files
 

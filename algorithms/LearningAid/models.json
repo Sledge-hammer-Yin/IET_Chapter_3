@@ -1,6 +1,6 @@
 {
   "run_id": "20261107_cpu_v1",
-  "url": "https://github.com/Sledge-hammer-Yin/IET_Chapter_3/releases/download/chapter3-learning-20261107/models_20261107_cpu_v1.tar.gz",
+  "url": null,
   "sha256": "032f1968355a499ab85c35ed810258e76408f30f8336a7ca13f5f2b792600055",
   "bytes": 126880870,
   "files": {
@@ -43,5 +43,6 @@
     "UWB/seed_42/best.pt": "74f88ed2a0a0ee82650c5cedc695f00d649f7f36240d239ed1d841c43e2e99c6",
     "UWB/seed_7/best.json": "70c5654f961200729f581a7c8300a1822c97cbe1e53d11e311b5e07079accda9",
     "UWB/seed_7/best.pt": "9004df3be18dc5c5ad2445f7473ab2865b6970f64a8d905e3c1e1b5a18996e2d"
-  }
+  },
+  "availability": "local_backup_only"
 }

@@ -128,8 +128,8 @@
     },
     {
       "path": "algorithms/LearningAid/fetch_models.py",
-      "sha256": "65585f8d0e445a1c4b27e98011921486a0c475cad7e78a5e19e774c00744a050",
-      "bytes": 2861
+      "sha256": "dc027bc6203f38413f0f8b8493047d694adf71fca713286148b2b883b89dfe73",
+      "bytes": 3022
     },
     {
       "path": "algorithms/LearningAid/fetch_upstream.py",
@@ -143,8 +143,8 @@
     },
     {
       "path": "algorithms/LearningAid/models.json",
-      "sha256": "b28fe2558467e2c24835c9e2ddd56ec2d20943279121e14e3c94f6d157ddf1c3",
-      "bytes": 4253
+      "sha256": "b6f4ef5c46c4ccfe6a0a29ec09f4afca9afdd09fe81517b3d24ba25473890b6c",
+      "bytes": 4169
     },
     {
       "path": "algorithms/LearningAid/prepare_gnss.py",
@@ -208,8 +208,8 @@
     },
     {
       "path": "chapters/section_3_5/README.md",
-      "sha256": "7b724ea544fb1fd556da754dfa8e2bce7e453b4bd9d646d91650cefe52281e14",
-      "bytes": 4349
+      "sha256": "90c102f42b1cc47505745c2e3bdac12debc49b479f54b40be9ef17a73665f623",
+      "bytes": 4435
     },
     {
       "path": "chapters/section_3_6/README.md",
@@ -428,8 +428,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "ff3c292b71def385bb859a99efd899a3557d97a1c119529460c0a120e89a212a",
-      "bytes": 5854
+      "sha256": "67871c91b080a9330e8f788ac3adfacfb1c656d00c845d16102de10978bc7fc5",
+      "bytes": 5884
     },
     {
       "path": "results/Deep-Urban-1/B1_ESKF.json",
@@ -2411,5 +2411,6 @@
       "sha256": "9c91849c764a32869e2cc8ef09f9e66d2486d7b32f57dfa95fb82407adfd9ef4",
       "bytes": 3206
     }
-  ]
+  ],
+  "model_weights": "Local backup only; no public model asset."
 }

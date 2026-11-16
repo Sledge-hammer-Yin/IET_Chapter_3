@@ -1,4 +1,4 @@
-"""Download the recorded trained models from this repository's release."""
+"""Check local models or download them when a public asset is available."""
 import argparse
 import hashlib
 import json
@@ -27,6 +27,8 @@ def main():
     if all((destination / name).is_file() for name in manifest['files']):
         print('Recorded models are already present and checked.')
         return
+    if not manifest.get('url'):
+        raise SystemExit('Recorded weights are not publicly hosted. Restore a local copy or train with a new model directory.')
     destination.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='learning_models_', dir=destination.parent) as temp:
         archive = Path(temp) / 'models.tar.gz'

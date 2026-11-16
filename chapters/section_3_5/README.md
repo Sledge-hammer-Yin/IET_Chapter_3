@@ -43,7 +43,6 @@ source ../.envs/learning/bin/activate
 python algorithms/LearningAid/fetch_upstream.py
 python -m pip install -r configs/LearningAid/requirements-linux.lock.txt
 python -m pip install --no-deps ../external/LearningAid/TASGNSS
-python algorithms/LearningAid/fetch_models.py
 ```
 
 The source fetcher checks five runtime repositories at the recorded commits and
@@ -70,8 +69,10 @@ nice -n 19 python scripts/LearningAid/run.py io --output ../runs/learning-new --
 ```
 
 These commands run sequentially. Use a new, empty model directory to train.
-To reuse the recorded weights, pass the directory prepared by `fetch_models.py`
-as `--models`. Existing checkpoints are reused; this is replay, not retraining.
+Recorded weights are retained in the local backup and are not publicly hosted.
+To reuse a checked local copy, pass its directory as `--models`.
+`fetch_models.py` verifies the existing files against `models.json`.
+Existing checkpoints are reused; this is replay, not retraining.
 The `all` action also runs the timing diagnostic and creates all figures.
 The `diagnostics` action reads raw inputs and completed replay outputs.
 Direct legacy scripts can write to their selected output directory. Prefer the
@@ -83,5 +84,6 @@ See the [measured result report](../../results/LearningAid/20261107_cpu_v1/READM
 GNSS and UWB are controlled teaching examples. The inertial result must retain
 its fixed-position control and negative absolute-error result. These are separate
 comparisons; do not combine them with Section 3.4 into one ranking.
-Model weights are release assets in this same repository. Raw datasets, private
-backups, upstream histories and installed environments are not publication files.
+Model checksums are included, but trained weights are retained locally.
+Raw datasets, private backups, upstream histories and installed environments
+are not publication files.
