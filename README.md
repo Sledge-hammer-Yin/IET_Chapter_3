@@ -11,26 +11,48 @@ methods require no trained weights.
 
 ## Algorithm map and trade-offs
 
-| Experiment | Method | Main idea | Chapter section | Main advantage | Main limitation |
-|---|---|---|---|---|---|
-| Conventional GNSS/IMU | B1 | GNSS/IMU error-state Kalman filter (ESKF) | 3.4.1 and 3.4.2 | Simple causal baseline | Sensitive to model errors and bad fixes |
-| Conventional GNSS/IMU | B2 | B1 with normalized innovation squared (NIS) rejection | 3.4.3 | Rejects isolated inconsistent fixes | May reject useful fixes after drift |
-| Conventional GNSS/IMU | B3 | Fixed-lag factor graph with IMU preintegration | 3.4.1, 3.4.4 and 3.4.5 | Uses temporal constraints in a window | More computation; no robust GNSS loss here |
-| GLIO | LC | GNSS position factors with LiDAR/IMU odometry | 3.4.6 | Simple position-level interface | Depends on the quality and availability of position fixes |
-| GLIO | TC-Pose | Double-difference pseudorange with relative-pose constraints | 3.4.6 | Uses raw GNSS structure more directly | More nonlinear and initialization-sensitive |
-| GLIO | TC-Surface | Double-difference pseudorange with LiDAR surface constraints | 3.4.6 | Adds scene geometry to the tight coupling | Highest resource cost; depends on scene geometry |
-| Learning-aided GNSS | WLS | Weighted least squares with fixed measurement weights | 3.5.2 | Training-free and transparent | Fixed weights do not adapt well to multipath |
-| Learning-aided GNSS | TDL-W | Learned satellite weights | 3.5.2 | Adapts measurement reliability | No explicit bias correction; needs representative training |
-| Learning-aided GNSS | TDL-B | Learned pseudorange bias correction | 3.5.2 | Corrects repeatable measurement bias | Does not learn measurement weights |
-| Learning-aided GNSS | TDL-BW | Joint learned bias and weight prediction | 3.5.2 | Combines the two correction mechanisms | More model dependence and training cost |
-| UWB/inertial fusion | ESKF | Fixed-noise UWB/IMU filter | 3.5.6 | Simple training-free baseline | Sensitive to biased time-difference-of-arrival measurements |
-| UWB/inertial fusion | Huber-ESKF | Robust Huber measurement update | 3.5.5 and 3.5.6 | Reduces the influence of large residuals | A fixed threshold cannot learn systematic bias |
-| UWB/inertial fusion | NN-ESKF | Learned UWB bias correction before filtering | 3.5.3, 3.5.5 and 3.5.6 | Corrects repeatable data-driven bias | Needs training; no direct NLOS label is evaluated |
-| UWB/inertial fusion | NN-Huber-ESKF | Learned correction with a robust update | 3.5.3, 3.5.5 and 3.5.6 | Combines bias correction and residual robustness | Most complex and dataset-dependent |
-| Inertial odometry | IMU integration | Direct inertial propagation | 3.5.4 | Training-free reference baseline | Accumulated drift grows rapidly |
-| Inertial odometry | Fixed position | Stationary prediction control | 3.5.4 | Exposes metric and data-split limitations | Not a navigation estimator; ignores motion |
-| Inertial odometry | TLIO-adapted | Learned motion with a stochastic-cloning ESKF | 3.5.4 | Greatly reduces free-integration drift | Higher absolute error than the fixed control on this split |
-| Inertial odometry | AirIO-Net + ESKF | Learned velocity aiding in an ESKF | 3.5.4 | Best tested relative-displacement result | Needs training; onboard timing and covariance calibration are unverified |
+### Sections 3.4.1-3.4.5: Conventional GNSS/IMU estimation
+
+| Method | Main idea | Chapter section | Main advantage | Main limitation |
+|---|---|---|---|---|
+| B1 | GNSS/IMU error-state Kalman filter (ESKF) | 3.4.1 and 3.4.2 | Simple causal baseline | Sensitive to model errors and bad fixes |
+| B2 | B1 with normalized innovation squared (NIS) rejection | 3.4.3 | Rejects isolated inconsistent fixes | May reject useful fixes after drift |
+| B3 | Fixed-lag factor graph with IMU preintegration | 3.4.1, 3.4.4 and 3.4.5 | Uses temporal constraints in a window | More computation; no robust GNSS loss here |
+
+### Section 3.4.6: GLIO fusion configurations
+
+| Method | Main idea | Chapter section | Main advantage | Main limitation |
+|---|---|---|---|---|
+| LC | GNSS position factors with LiDAR/IMU odometry | 3.4.6 | Simple position-level interface | Depends on the quality and availability of position fixes |
+| TC-Pose | Double-difference pseudorange with relative-pose constraints | 3.4.6 | Uses raw GNSS structure more directly | More nonlinear and initialization-sensitive |
+| TC-Surface | Double-difference pseudorange with LiDAR surface constraints | 3.4.6 | Adds scene geometry to the tight coupling | Highest resource cost; depends on scene geometry |
+
+### Section 3.5.2: Learning-aided GNSS
+
+| Method | Main idea | Chapter section | Main advantage | Main limitation |
+|---|---|---|---|---|
+| WLS | Weighted least squares with fixed measurement weights | 3.5.2 | Training-free and transparent | Fixed weights do not adapt well to multipath |
+| TDL-W | Learned satellite weights | 3.5.2 | Adapts measurement reliability | No explicit bias correction; needs representative training |
+| TDL-B | Learned pseudorange bias correction | 3.5.2 | Corrects repeatable measurement bias | Does not learn measurement weights |
+| TDL-BW | Joint learned bias and weight prediction | 3.5.2 | Combines the two correction mechanisms | More model dependence and training cost |
+
+### Sections 3.5.3, 3.5.5 and 3.5.6: UWB/inertial fusion
+
+| Method | Main idea | Chapter section | Main advantage | Main limitation |
+|---|---|---|---|---|
+| ESKF | Fixed-noise UWB/IMU filter | 3.5.6 | Simple training-free baseline | Sensitive to biased time-difference-of-arrival measurements |
+| Huber-ESKF | Robust Huber measurement update | 3.5.5 and 3.5.6 | Reduces the influence of large residuals | A fixed threshold cannot learn systematic bias |
+| NN-ESKF | Learned UWB bias correction before filtering | 3.5.3, 3.5.5 and 3.5.6 | Corrects repeatable data-driven bias | Needs training; no direct NLOS label is evaluated |
+| NN-Huber-ESKF | Learned correction with a robust update | 3.5.3, 3.5.5 and 3.5.6 | Combines bias correction and residual robustness | Most complex and dataset-dependent |
+
+### Section 3.5.4: Deep inertial odometry
+
+| Method | Main idea | Chapter section | Main advantage | Main limitation |
+|---|---|---|---|---|
+| IMU integration | Direct inertial propagation | 3.5.4 | Training-free reference baseline | Accumulated drift grows rapidly |
+| Fixed position | Stationary prediction control | 3.5.4 | Exposes metric and data-split limitations | Not a navigation estimator; ignores motion |
+| TLIO-adapted | Learned motion with a stochastic-cloning ESKF | 3.5.4 | Greatly reduces free-integration drift | Higher absolute error than the fixed control on this split |
+| AirIO-Net + ESKF | Learned velocity aiding in an ESKF | 3.5.4 | Best tested relative-displacement result | Needs training; onboard timing and covariance calibration are unverified |
 
 Section 3.5.1 defines the learning-aided taxonomy used by the Section 3.5 rows;
 the implemented comparisons are reported in Sections 3.5.2-3.5.6.
